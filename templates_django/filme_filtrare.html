@@ -1,0 +1,14 @@
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Filtreaza</button>
+</form>
+
+<div>
+    <h3>Filme</h3>
+    {% for film in filme %}
+        <p>{{ film.nume_film }} ({{ film.rating }}) - {{ film.regizor}} | {{ film.anul_lansarii }}</p>
+    {% empty %}
+        <p>Nu au fost gasite filme care sa corespunda criteriilor.</p>
+    {% endfor %}
+</div>

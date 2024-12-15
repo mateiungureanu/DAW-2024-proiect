@@ -1,0 +1,31 @@
+<h1>Profilul meu</h1>
+<ul>
+    {% for key, value in user_data.items %}
+        <li><strong>{{ key|capfirst }}:</strong> {{ value }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'change_password' %}">Schimbă parola</a>
+<a href="{% url 'user_logout' %}">Logout</a>
+
+<div id="banner" style="display: none; background-color: red; color: white; padding: 10px; margin-top: 20px; text-align: center;">
+    <a href="{% url 'ofera_permisiune' %}" style="color: white; text-decoration: none; font-weight: bold;">
+        Oferta reducere 50%!
+    </a>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const probability = Math.random();
+        if (probability <= 0.3) {
+            document.getElementById('banner').style.display = 'block';
+        }
+    });
+</script>
+
+{% if messages %}
+    <ul class="messages">
+        {% for message in messages %}
+            <li class="{{ message.tags }}">{{ message }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}

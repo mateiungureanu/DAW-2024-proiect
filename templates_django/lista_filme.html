@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Filme</title>
+</head>
+<body>
+    <h1>Lista Filme</h1>
+    <ul>
+        {% for film in filme %}
+            <li><a href="{% url 'film_detail' film.id %}">{{ film.nume_film }} | {{ film.anul_lansarii }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cos Virtual</title>
+    <style>
+        .produs {
+            border: 1px solid grey;
+            padding: 10px;
+            margin: 10px 0;
+        }
+        .sort-buttons {
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Cos Virtual</h1>
+    <div class="sort-buttons">
+        <button id="sort-nume">Sorteaza după nume</button>
+        <button id="sort-pret">Sorteaza după pret</button>
+    </div>
+    <div id="cos-produse"></div>
+    <div id="cos-totaluri" style="margin-top: 20px;">
+        <p><strong>Total obiecte:</strong> <span id="total-obiecte">0</span></p>
+        <p><strong>Pret total:</strong> <span id="total-pret">0</span> RON</p>
+    </div>
+
+    <script>
+        const produseDB = JSON.parse('{{ produse_json|safe }}');
+        function genereazaCos() {
+            const idCos = localStorage.getItem("cos_virtual");
+            if (!idCos) {
+                document.getElementById("cos-produse").innerHTML = "<p>Cosul este gol.</p>";
+                document.getElementById("total-obiecte").textContent = 0;
+                document.getElementById("total-pret").textContent = 0;
+                return;
+            }
+
+            const vectorCos = idCos.split(",");
+            const container = document.getElementById("cos-produse");
+            container.innerHTML = "";
+            let totalPret = 0;
+            let totalObiecte = 0;
+
+            for (let i of vectorCos) {
+                const [produsId, produsCantitate] = i.split("/");
+                const produs = produseDB.find(function(p) {
+                    return p.id === parseInt(produsId);
+                });
+                if (produs) {
+                    const pretPartial = produs.pret * produsCantitate;
+                    totalPret += pretPartial;
+                    totalObiecte += parseInt(produsCantitate);
+                    container.innerHTML += `
+                        <div class="produs" data-id="${produs.id}" data-pret="${produs.pret}" data-nume="${produs.nume}">
+                            <p><strong>Nume:</strong> ${produs.nume}</p>
+                            <p><strong>Pret unitar:</strong> ${produs.pret} RON</p>
+                            <p><strong>Cantitate:</strong> ${produsCantitate}</p>
+                            <p><strong>Pret partial:</strong> ${pretPartial.toFixed(2)} RON</p>
+                        </div>
+                    `;
+                }
+            }
+            document.getElementById("total-pret").textContent = totalPret.toFixed(2);
+            document.getElementById("total-obiecte").textContent = totalObiecte;
+        }
+        function sorteaza(criteriu) {
+            const container = document.getElementById("cos-produse");
+            const produse = Array.from(container.getElementsByClassName("produs"));
+            produse.sort((a, b) => {
+                if (criteriu === "nume") {
+                    return a.dataset.nume.localeCompare(b.dataset.nume);
+                } else if (criteriu === "pret") {
+                    return parseFloat(a.dataset.pret) - parseFloat(b.dataset.pret);
+                }
+            });
+            container.innerHTML = "";
+            produse.forEach(produs => container.appendChild(produs));
+        }
+        document.getElementById("sort-nume").onclick = () => sorteaza("nume");
+        document.getElementById("sort-pret").onclick = () => sorteaza("pret");
+        window.onload = genereazaCos;
+    </script>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmare email</title>
+</head>
+<body>
+    <h1>Bun venit, {{ user.username }}!</h1>
+    <p>Salut!</p>
+    <p>Iti multumim ca te-ai inregistrat pe site-ul nostru.</p>
+    <p>Te rugam sa confirmi emailul tau accesand urmatorul link:</p>
+    <p><a href="{{ confirm_url }}">{{ confirm_url }}</a></p>
+    <p>Cu drag, echipa noastra.</p>
+    <img src="https://static.toiimg.com/thumb/msid-113698030,imgsize-65206,width-400,resizemode-4/113698030.jpg" alt="logo" />
+</body>
+</html>

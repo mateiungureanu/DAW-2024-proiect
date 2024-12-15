@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalii Film</title>
+</head>
+<body>
+    <h1>Detalii Film</h1>
+    <p><strong>Nume Film:</strong> {{ film.nume_film }}</p>
+    <p><strong>Rating:</strong> {{ film.rating }}</p>
+    <p><strong>Durata:</strong> {{ film.durata }} minute</p>
+    <p><strong>Regizor:</strong> {{ film.regizor }}</p>
+    <p><strong>Anul Lansarii:</strong> {{ film.anul_lansarii }}</p>
+    <a href="{% url 'lista_filme' %}">Inapoi la lista filmelor</a>
+</body>
+</html>

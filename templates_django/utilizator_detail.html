@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalii Utilizator</title>
+</head>
+<body>
+    <h1>Detalii Utilizator</h1>
+    <p><strong>Username:</strong> {{ utilizator.username }}</p>
+    <p><strong>Email:</strong> {{ utilizator.email }}</p>
+    <p><strong>Nume:</strong> {{ utilizator.nume }}</p>
+    <p><strong>Prenume:</strong> {{ utilizator.prenume }}</p>
+    <p><strong>Telefon:</strong> {{ utilizator.telefon }}</p>
+    <p><strong>Adresa:</strong> {{ utilizator.adresa }}</p>
+    <p><strong>Data nasterii:</strong> {{ utilizator.data_nasterii }}</p>
+    <p><strong>Gen:</strong> {{ utilizator.gen }}</p>
+    <p><strong>Ocupatie:</strong> {{ utilizator.ocupatie }}</p>
+    <a href="{% url 'lista_utilizatori' %}">Inapoi la lista utilizatorilor</a>
+</body>
+</html>

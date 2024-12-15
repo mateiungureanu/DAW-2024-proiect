@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Utilizatori</title>
+</head>
+<body>
+    <h1>Lista Utilizatori</h1>
+    <ul>
+        {% for utilizator in utilizatori %}
+            <li><a href="{% url 'utilizator_detail' utilizator.id %}">{{ utilizator.username }} | {{ utilizator.email }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <h1>
+        {% if titlu %}
+            {{ titlu }}
+        {% else %}
+            Eroare 403
+        {% endif %}
+    </h1>
+    <p>
+        {% if user.is_authenticated %}
+            Salut {{ user.username }}!
+        {% else %}
+            Salut preastimate anonim!
+        {% endif %}
+    </p>
+    <p>{{ mesaj }}</p>
+</body>
+</html>

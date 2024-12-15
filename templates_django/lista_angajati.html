@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Angajați</title>
+</head>
+<body>
+    <h1>Lista Angajați</h1>
+    <ul>
+        {% for angajat in angajati %}
+            <li><a href="{% url 'angajat_detail' angajat.id %}">{{ angajat.nume }} {{ angajat.prenume }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

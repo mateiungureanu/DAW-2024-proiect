@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista Cinemauri</title>
+</head>
+<body>
+    <h1>Lista Cinemauri</h1>
+    <ul>
+        {% for cinema in cinemauri %}
+            <li><a href="{% url 'cinema_detail' cinema.id %}">{{ cinema.nume_cinema }} | {{ cinema.oras }}</a></li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

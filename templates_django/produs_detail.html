@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detalii Produs</title>
+    <style>
+        article{
+            border:2px solid grey;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            function rosu() {
+                let id_uri_cos = localStorage.getItem("cos_virtual");
+                if (id_uri_cos) {
+                    let vector_cos = id_uri_cos.split(",");
+                    let articole = document.getElementsByClassName("produs");
+                    for (let articol of articole) {
+                        let articolId = articol.dataset["id"];
+                        for (let i of vector_cos) {
+                            let [produsId, produsCantitate] = i.split("/");
+                            if (produsId === articolId) {
+                                document.getElementById(`in-cos-${articolId}`).textContent = `In cos: ${produsCantitate}`;
+                                articol.style.borderColor = "red";
+                                break;
+                            }
+                        }
+                    }
+                }
+            }
+            rosu();
+            var butoane = document.getElementsByClassName("btn_cos_virtual");
+            for (let btn of butoane) {
+                btn.onclick = function () {
+                    let id_uri_cos = localStorage.getItem("cos_virtual");
+                    let vector_cos = id_uri_cos ? id_uri_cos.split(",") : [];
+                    let produsId = this.dataset["id"];
+                    let stocDisponibil = parseInt(document.querySelector(`[data-id="${produsId}"]`).dataset["stoc"]);
+                    let gasit = false;
+                    for (let i in vector_cos) {
+                        let [produsIdInCos, produsCantitate] = vector_cos[i].split("/");
+                        if (produsIdInCos === produsId) {
+                            if (parseInt(produsCantitate) + 1 > stocDisponibil) {
+                                alert("Nu mai sunt suficiente produse in stoc!");
+                                return;
+                            }
+                            produsCantitate++;
+                            vector_cos[i] = `${produsId}/${produsCantitate}`;
+                            gasit = true;
+                            document.getElementById(`in-cos-${produsId}`).textContent = `In cos: ${produsCantitate}`;
+                            break;
+                        }
+                    }
+                    if (!gasit) {
+                        vector_cos.push(`${produsId}/1`);
+                        document.getElementById(`in-cos-${produsId}`).textContent = `In cos: 1`;
+                    }
+                    localStorage.setItem("cos_virtual", vector_cos.join(","));
+                    rosu();
+                };
+            }
+            var butoanePlus = document.getElementsByClassName("btn_plus");
+            for (let btn of butoanePlus) {
+                btn.onclick = function () {
+                    let id_uri_cos = localStorage.getItem("cos_virtual");
+                    let vector_cos = id_uri_cos ? id_uri_cos.split(",") : [];
+                    let produsId = this.dataset["id"];
+                    let stocDisponibil = parseInt(document.querySelector(`[data-id="${produsId}"]`).dataset["stoc"]);
+                    for (let i in vector_cos) {
+                        let [produsIdInCos, produsCantitate] = vector_cos[i].split("/");
+                        if (produsIdInCos === produsId) {
+                            if (parseInt(produsCantitate) + 1 > stocDisponibil) {
+                                alert("Nu mai sunt suficiente produse in stoc!");
+                                return;
+                            }
+                            produsCantitate++;
+                            vector_cos[i] = `${produsId}/${produsCantitate}`;
+                            localStorage.setItem("cos_virtual", vector_cos.join(","));
+                            document.getElementById(`in-cos-${produsId}`).textContent = `In cos: ${produsCantitate}`;
+                            break;
+                        }
+                    }
+                    rosu();
+                };
+            }
+            var butoaneMinus = document.getElementsByClassName("btn_minus");
+            for (let btn of butoaneMinus) {
+                btn.onclick = function () {
+                    let id_uri_cos = localStorage.getItem("cos_virtual");
+                    let vector_cos = id_uri_cos ? id_uri_cos.split(",") : [];
+                    let produsId = this.dataset["id"];
+                    for (let i in vector_cos) {
+                        let [produsIdInCos, produsCantitate] = vector_cos[i].split("/");
+                        if (produsIdInCos === produsId) {
+                            if (parseInt(produsCantitate) > 1) {
+                                produsCantitate--;
+                                vector_cos[i] = `${produsId}/${produsCantitate}`;
+                                document.getElementById(`in-cos-${produsId}`).textContent = `In cos: ${produsCantitate}`;
+                            } else {
+                                vector_cos.splice(i, 1);
+                                document.getElementById(`in-cos-${produsId}`).textContent = "In cos: 0";
+                                document.querySelector(`[data-id="${produsId}"]`).style.borderColor = "grey";
+                            }
+                            localStorage.setItem("cos_virtual", vector_cos.join(","));
+                            break;
+                        }
+                    }
+                    rosu();
+                };
+            }
+            var butoaneRemove = document.getElementsByClassName("btn_remove");
+            for (let btn of butoaneRemove) {
+                btn.onclick = function () {
+                    let id_uri_cos = localStorage.getItem("cos_virtual");
+                    let vector_cos = id_uri_cos ? id_uri_cos.split(",") : [];
+                    let produsId = this.dataset["id"];
+                    for (let i in vector_cos) {
+                        let [produsIdInCos] = vector_cos[i].split("/");
+                        if (produsIdInCos === produsId) {
+                            vector_cos.splice(i, 1);
+                            document.getElementById(`in-cos-${produsId}`).textContent = "In cos: 0";
+                            document.querySelector(`[data-id="${produsId}"]`).style.borderColor = "grey";
+                            localStorage.setItem("cos_virtual", vector_cos.join(","));
+                            break;
+                        }
+                    }
+                    rosu();
+                };
+            }
+            let inputCantitate = document.querySelectorAll(".input_cantitate");
+            inputCantitate.forEach(function (input) {
+                input.addEventListener("keydown", function (event) {
+                    if (event.key === "Enter") {
+                        let produsId = input.dataset["id"];
+                        let cantitateNoua = parseInt(input.value);
+                        let stocDisponibil = parseInt(this.dataset["stoc"]);
+                        if (isNaN(cantitateNoua) || cantitateNoua < 1) {
+                            input.value = 1;
+                            return;
+                        }
+                        if (cantitateNoua > stocDisponibil) {
+                            alert("Nu mai sunt suficiente produse in stoc!");
+                            input.value = stocDisponibil;
+                            return;
+                        }
+                        let id_uri_cos = localStorage.getItem("cos_virtual");
+                        if (id_uri_cos) {
+                            let vector_cos = id_uri_cos.split(",");
+                            let gasit = false;
+                            for (let i in vector_cos) {
+                                let [produsId, produsCantitate] = vector_cos[i].split("/");
+                                if (produsId === input.dataset["id"]) {
+                                    vector_cos[i] = `${produsId}/${cantitateNoua}`;
+                                    gasit = true;
+                                    break;
+                                }
+                            }
+                            if (!gasit) {
+                                vector_cos.push(`${produsId}/${cantitateNoua}`);
+                            }
+                            localStorage.setItem("cos_virtual", vector_cos.join(","));
+                        }
+                        rosu();
+                    }
+                });
+            });
+        };
+    </script>
+</head>
+<body>
+    <h1>Detalii Produs</h1>
+    <article data-id="{{ produs.id }}" data-stoc="{{ produs.stoc }}" class="produs">
+        <p><strong>Nume:</strong> {{ produs.nume }}</p>
+        <p><strong>Categorie:</strong> {{ produs.categorie }}</p>
+        <p><strong>Pret:</strong> {{ produs.pret }} RON</p>
+        <p><strong>Descriere:</strong> {{ produs.descriere }}</p>
+        <p>Stoc: {{ produs.stoc }}</p>
+        <p id="in-cos-{{ produs.id }}">In cos: 0</p>
+        <button data-id="{{ produs.id }}" data-nume="{{ produs.nume }}" class="btn_cos_virtual">Adauga in cos</button>
+        <button data-id="{{ produs.id }}" class="btn_plus">+</button>
+        <input type="number" data-id="{{ produs.id }}" class="input_cantitate" min="1" value="1">
+        <button data-id="{{ produs.id }}" class="btn_minus">-</button>
+        <button data-id="{{ produs.id }}" class="btn_remove">Elimina</button>
+        <a href="{% url 'lista_produse' %}">Inapoi la lista produselor</a>
+    </article>
+</body>
+</html>
