@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="csrf-token" content="{{ csrf_token }}">
     <title>Cos Virtual</title>
     <style>
         .produs {
@@ -11,6 +12,9 @@
         }
         .sort-buttons {
             margin-bottom: 20px;
+        }
+        #cumpara-cos {
+            color: red;
         }
     </style>
 </head>
@@ -25,9 +29,11 @@
         <p><strong>Total obiecte:</strong> <span id="total-obiecte">0</span></p>
         <p><strong>Pret total:</strong> <span id="total-pret">0</span> RON</p>
     </div>
+    <button id="cumpara-cos"><strong>Cumpara</strong></button>
 
     <script>
         const produseDB = JSON.parse('{{ produse_json|safe }}');
+    
         function genereazaCos() {
             const idCos = localStorage.getItem("cos_virtual");
             if (!idCos) {
@@ -36,13 +42,12 @@
                 document.getElementById("total-pret").textContent = 0;
                 return;
             }
-
+    
             const vectorCos = idCos.split(",");
             const container = document.getElementById("cos-produse");
             container.innerHTML = "";
             let totalPret = 0;
             let totalObiecte = 0;
-
             for (let i of vectorCos) {
                 const [produsId, produsCantitate] = i.split("/");
                 const produs = produseDB.find(function(p) {
@@ -65,22 +70,46 @@
             document.getElementById("total-pret").textContent = totalPret.toFixed(2);
             document.getElementById("total-obiecte").textContent = totalObiecte;
         }
-        function sorteaza(criteriu) {
-            const container = document.getElementById("cos-produse");
-            const produse = Array.from(container.getElementsByClassName("produs"));
-            produse.sort((a, b) => {
-                if (criteriu === "nume") {
-                    return a.dataset.nume.localeCompare(b.dataset.nume);
-                } else if (criteriu === "pret") {
-                    return parseFloat(a.dataset.pret) - parseFloat(b.dataset.pret);
+        document.getElementById("cumpara-cos").onclick = function() {
+            const idCos = localStorage.getItem("cos_virtual");
+            if (!idCos) {
+                alert("Cosul este gol!");
+                return;
+            }
+            const vectorCos = idCos.split(",");
+            const comanda = {
+                cos: vectorCos
+            };
+            fetch('http://localhost:8000/aplicatie1/cumpara_cos/', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                    'X-CSRFToken': '{{csrf_token}}'
+                },
+                body: JSON.stringify(comanda)
+            })
+            .then(raspuns => {
+                if (!raspuns.ok) {
+                    throw new Error(`Eroare HTTP. Status: ${raspuns.status}`);
                 }
+                return raspuns.json();
+            })
+            .then(date => {
+                console.log('Raspuns:', date);
+                if (date.status === "success") {
+                    alert("Comanda a fost plasată cu succes!");
+                    localStorage.removeItem("cos_virtual");
+                    genereazaCos();
+                } else {
+                    alert("A aparut o problema la plasarea comenzii.");
+                }
+            })
+            .catch(eroare => {
+                console.error('Eroare:', eroare);
+                alert("A aparut o eroare.");
             });
-            container.innerHTML = "";
-            produse.forEach(produs => container.appendChild(produs));
-        }
-        document.getElementById("sort-nume").onclick = () => sorteaza("nume");
-        document.getElementById("sort-pret").onclick = () => sorteaza("pret");
+        };
         window.onload = genereazaCos;
-    </script>
+    </script>    
 </body>
 </html>

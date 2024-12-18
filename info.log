@@ -1,0 +1,241 @@
+INFO 2024-12-18 12:11:56,918 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 12:12:08,259 basehttp "GET /aplicatie1/cos_virtual HTTP/1.1" 301 0
+INFO 2024-12-18 12:12:08,474 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 4463
+WARNING 2024-12-18 12:12:08,531 log Not Found: /favicon.ico
+WARNING 2024-12-18 12:12:08,532 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+INFO 2024-12-18 12:12:42,086 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 4503
+INFO 2024-12-18 12:12:53,034 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 4503
+INFO 2024-12-18 12:16:59,165 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 4565
+INFO 2024-12-18 12:17:22,620 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 4602
+INFO 2024-12-18 12:17:34,435 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 4565
+INFO 2024-12-18 12:23:46,521 autoreload C:\Users\Matei\proiect_django\aplicatie1\models.py changed, reloading.
+INFO 2024-12-18 12:23:49,430 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 12:30:33,233 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2024-12-18 12:30:33,757 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:20:43,455 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:23:31,121 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:23:57,287 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:24:30,918 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5444
+WARNING 2024-12-18 14:24:31,103 log Not Found: /favicon.ico
+WARNING 2024-12-18 14:24:31,103 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+WARNING 2024-12-18 14:24:39,167 log Not Found: /cumpara_cos
+WARNING 2024-12-18 14:24:39,168 basehttp "POST /cumpara_cos HTTP/1.1" 404 2373
+INFO 2024-12-18 14:26:01,456 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:26:02,397 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:27:19,732 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:27:20,586 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:27:47,193 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5444
+WARNING 2024-12-18 14:27:49,655 log Not Found: /cumpara_cos
+WARNING 2024-12-18 14:27:49,656 basehttp "POST /cumpara_cos HTTP/1.1" 404 2373
+INFO 2024-12-18 14:30:57,390 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2024-12-18 14:30:58,181 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:31:14,511 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:31:15,531 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:31:20,041 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5444
+WARNING 2024-12-18 14:31:23,144 log Not Found: /cumpara_cos
+WARNING 2024-12-18 14:31:23,146 basehttp "POST /cumpara_cos HTTP/1.1" 404 2373
+INFO 2024-12-18 14:33:46,776 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:33:47,754 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:35:14,828 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:35:15,737 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:35:18,627 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:35:19,478 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:38:13,483 basehttp "GET /admin/ HTTP/1.1" 200 16694
+INFO 2024-12-18 14:38:13,554 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,555 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,558 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,558 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,559 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,560 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,567 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,611 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:13,611 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+WARNING 2024-12-18 14:38:13,675 log Not Found: /favicon.ico
+WARNING 2024-12-18 14:38:13,677 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+INFO 2024-12-18 14:38:15,214 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14242
+INFO 2024-12-18 14:38:15,241 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,246 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,248 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,248 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,248 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,248 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,255 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,255 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,255 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,256 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,271 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:15,346 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-18 14:38:15,377 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:16,743 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20378
+INFO 2024-12-18 14:38:16,775 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:16,775 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:16,837 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-18 14:38:16,882 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:16,882 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+INFO 2024-12-18 14:38:16,882 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2024-12-18 14:39:34,222 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5445
+WARNING 2024-12-18 14:39:36,181 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:39:36,186 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 14:40:13,303 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2024-12-18 14:40:14,266 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:40:17,909 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5445
+WARNING 2024-12-18 14:40:18,989 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:40:18,989 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 14:41:07,274 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:41:08,296 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:41:11,718 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5445
+WARNING 2024-12-18 14:41:12,678 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:41:12,679 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:41:29,221 log Not Found: /aplicatie1/cuser_lo
+WARNING 2024-12-18 14:41:29,221 basehttp "GET /aplicatie1/cuser_lo HTTP/1.1" 404 15946
+INFO 2024-12-18 14:41:35,105 basehttp "GET /aplicatie1/user_login HTTP/1.1" 301 0
+INFO 2024-12-18 14:41:35,182 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 835
+INFO 2024-12-18 14:41:45,614 views Autentificare reusita pentru utilizatorul viceroy.
+INFO 2024-12-18 14:41:45,631 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 302 0
+INFO 2024-12-18 14:41:45,785 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1204
+INFO 2024-12-18 14:41:51,372 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5445
+WARNING 2024-12-18 14:41:57,107 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:41:57,109 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 14:43:50,688 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2024-12-18 14:43:51,498 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:44:01,992 basehttp "GET /aplicatie1/cumpara_cos HTTP/1.1" 301 0
+WARNING 2024-12-18 14:44:02,311 log Method Not Allowed: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 14:44:02,312 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 405 29
+INFO 2024-12-18 14:46:56,734 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5445
+INFO 2024-12-18 14:51:01,172 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5673
+WARNING 2024-12-18 14:51:02,934 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:51:02,935 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 14:55:13,361 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 14:55:14,347 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 14:55:16,550 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5876
+WARNING 2024-12-18 14:55:19,267 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:55:19,267 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 14:56:58,315 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5475
+WARNING 2024-12-18 14:56:59,777 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:56:59,778 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 14:58:24,361 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1089
+WARNING 2024-12-18 14:58:54,421 log Method Not Allowed: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 14:58:54,421 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 405 55
+INFO 2024-12-18 15:03:56,244 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5549
+WARNING 2024-12-18 15:03:58,529 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 15:03:58,531 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 15:16:07,799 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:16:08,881 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:16:21,432 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5418
+WARNING 2024-12-18 15:16:22,968 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 15:16:22,969 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+INFO 2024-12-18 15:17:52,362 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+ERROR 2024-12-18 15:17:54,236 log Internal Server Error: /aplicatie1/cumpara_cos/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 698, in cumpara_cos
+    for item in cos_virtual.split(","):
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+ERROR 2024-12-18 15:17:54,238 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 500 76887
+INFO 2024-12-18 15:19:37,726 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:19:38,817 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:19:40,057 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+ERROR 2024-12-18 15:19:41,197 log Internal Server Error: /aplicatie1/cumpara_cos/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 699, in cumpara_cos
+    for item in cos_virtual.split(","):
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+ERROR 2024-12-18 15:19:41,199 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 500 76874
+INFO 2024-12-18 15:22:18,122 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:22:18,961 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:22:49,715 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+ERROR 2024-12-18 15:23:02,554 log Internal Server Error: /aplicatie1/cumpara_cos/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 720, in cumpara_cos
+    email.send()
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+ERROR 2024-12-18 15:23:02,569 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 500 114828
+INFO 2024-12-18 15:23:50,014 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:23:53,312 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+WARNING 2024-12-18 15:23:59,461 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:23:59,461 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+INFO 2024-12-18 15:26:13,996 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1089
+INFO 2024-12-18 15:26:32,310 views Utilizatorul viceroy s-a deconectat.
+INFO 2024-12-18 15:26:32,322 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2024-12-18 15:26:32,421 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 952
+INFO 2024-12-18 15:27:32,316 views Autentificare reusita pentru utilizatorul viceroy.
+INFO 2024-12-18 15:27:32,319 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 302 0
+INFO 2024-12-18 15:27:32,401 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1204
+INFO 2024-12-18 15:27:36,464 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+WARNING 2024-12-18 15:27:40,202 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:27:40,204 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+INFO 2024-12-18 15:28:13,553 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:28:14,295 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:33:14,650 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:33:15,558 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:33:20,147 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+WARNING 2024-12-18 15:33:28,674 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:33:28,674 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+INFO 2024-12-18 15:35:17,400 basehttp "GET /aplicatie1/lista_produse HTTP/1.1" 301 0
+INFO 2024-12-18 15:35:17,801 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19453
+INFO 2024-12-18 15:37:02,194 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:37:03,050 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:40:37,192 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:40:38,261 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:40:44,201 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19453
+INFO 2024-12-18 15:40:50,231 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+WARNING 2024-12-18 15:40:52,742 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:40:52,743 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+INFO 2024-12-18 15:41:29,640 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5429
+INFO 2024-12-18 15:41:56,911 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
+INFO 2024-12-18 15:42:42,295 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:42:42,949 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:43:00,166 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2024-12-18 15:43:00,816 autoreload Watching for file changes with StatReloader

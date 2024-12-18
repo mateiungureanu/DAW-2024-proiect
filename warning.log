@@ -1,0 +1,115 @@
+WARNING 2024-12-18 12:12:08,531 log Not Found: /favicon.ico
+WARNING 2024-12-18 12:12:08,532 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+WARNING 2024-12-18 14:24:31,103 log Not Found: /favicon.ico
+WARNING 2024-12-18 14:24:31,103 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+WARNING 2024-12-18 14:24:39,167 log Not Found: /cumpara_cos
+WARNING 2024-12-18 14:24:39,168 basehttp "POST /cumpara_cos HTTP/1.1" 404 2373
+WARNING 2024-12-18 14:27:49,655 log Not Found: /cumpara_cos
+WARNING 2024-12-18 14:27:49,656 basehttp "POST /cumpara_cos HTTP/1.1" 404 2373
+WARNING 2024-12-18 14:31:23,144 log Not Found: /cumpara_cos
+WARNING 2024-12-18 14:31:23,146 basehttp "POST /cumpara_cos HTTP/1.1" 404 2373
+WARNING 2024-12-18 14:38:13,675 log Not Found: /favicon.ico
+WARNING 2024-12-18 14:38:13,677 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+WARNING 2024-12-18 14:39:36,181 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:39:36,186 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:40:18,989 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:40:18,989 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:41:12,678 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:41:12,679 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:41:29,221 log Not Found: /aplicatie1/cuser_lo
+WARNING 2024-12-18 14:41:29,221 basehttp "GET /aplicatie1/cuser_lo HTTP/1.1" 404 15946
+WARNING 2024-12-18 14:41:57,107 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:41:57,109 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:44:02,311 log Method Not Allowed: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 14:44:02,312 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 405 29
+WARNING 2024-12-18 14:51:02,934 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:51:02,935 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:55:19,267 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:55:19,267 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:56:59,777 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 14:56:59,778 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 14:58:54,421 log Method Not Allowed: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 14:58:54,421 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 405 55
+WARNING 2024-12-18 15:03:58,529 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 15:03:58,531 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+WARNING 2024-12-18 15:16:22,968 log Not Found: /cumpara_cos/
+WARNING 2024-12-18 15:16:22,969 basehttp "POST /cumpara_cos/ HTTP/1.1" 404 2376
+ERROR 2024-12-18 15:17:54,236 log Internal Server Error: /aplicatie1/cumpara_cos/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 698, in cumpara_cos
+    for item in cos_virtual.split(","):
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+ERROR 2024-12-18 15:17:54,238 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 500 76887
+ERROR 2024-12-18 15:19:41,197 log Internal Server Error: /aplicatie1/cumpara_cos/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 699, in cumpara_cos
+    for item in cos_virtual.split(","):
+                ^^^^^^^^^^^^^^^^^
+AttributeError: 'list' object has no attribute 'split'
+ERROR 2024-12-18 15:19:41,199 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 500 76874
+ERROR 2024-12-18 15:23:02,554 log Internal Server Error: /aplicatie1/cumpara_cos/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 720, in cumpara_cos
+    email.send()
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\mail\message.py", line 301, in send
+    return self.get_connection(fail_silently).send_messages([self])
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\mail\backends\smtp.py", line 128, in send_messages
+    new_conn_created = self.open()
+                       ^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\site-packages\django\core\mail\backends\smtp.py", line 86, in open
+    self.connection = self.connection_class(
+                      ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 255, in __init__
+    (code, msg) = self.connect(host, port)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 341, in connect
+    self.sock = self._get_socket(host, port, self.timeout)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\smtplib.py", line 312, in _get_socket
+    return socket.create_connection((host, port), timeout,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 841, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\WindowsApps\PythonSoftwareFoundation.Python.3.12_3.12.2288.0_x64__qbz5n2kfra8p0\Lib\socket.py", line 976, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+ERROR 2024-12-18 15:23:02,569 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 500 114828
+WARNING 2024-12-18 15:23:59,461 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:23:59,461 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+WARNING 2024-12-18 15:27:40,202 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:27:40,204 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+WARNING 2024-12-18 15:33:28,674 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:33:28,674 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
+WARNING 2024-12-18 15:40:52,742 log Bad Request: /aplicatie1/cumpara_cos/
+WARNING 2024-12-18 15:40:52,743 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53

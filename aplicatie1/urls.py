@@ -62,4 +62,5 @@ urlpatterns = [
     path('block_user/<int:user_id>/', views.block_user, name='block_user'),
     path('unblock_user/<int:user_id>/', views.unblock_user, name='unblock_user'),
     path('cos_virtual/', views.cos_virtual, name='cos_virtual'),
+    path('cumpara_cos/', views.cumpara_cos, name='cumpara_cos'),
 ]

@@ -6,21 +6,23 @@ from django.contrib.auth import login, logout, update_session_auth_hash
 from django.contrib.auth.decorators import login_required
 from django.contrib.auth.models import Permission
 from django.contrib.sitemaps import Sitemap
-from django.core.mail import send_mail, send_mass_mail, mail_admins
+from django.core.mail import send_mail, send_mass_mail, mail_admins, EmailMessage
 from django.core.paginator import Paginator
 from django.core.serializers.json import DjangoJSONEncoder
 from django.db.models import Q, Count
-from django.http import HttpResponse, HttpResponseForbidden
+from django.http import HttpResponse, HttpResponseForbidden, JsonResponse
 from django.shortcuts import render, redirect, get_object_or_404
 from django.template.loader import render_to_string
 from django.urls import reverse
 from django.utils.crypto import get_random_string
 from django.utils.timezone import now
 from django.views.decorators.cache import never_cache
+from reportlab.lib.pagesizes import letter
+from reportlab.pdfgen import canvas
 from .forms import ContactViewForm, FilmeFilterForm, ContactForm, AngajatiForm, CustomUserCreationForm, CustomLoginForm, CustomPasswordChangeForm, PromotieForm
 import json
 import logging
-from .models import Cinemauri, Angajati, Sali, Filme, Difuzari, Achizitii, Bilete, CustomUser, Produse, Vizualizari
+from .models import Cinemauri, Angajati, Sali, Filme, Difuzari, Achizitii, Bilete, CustomUser, Produse, Vizualizari, Comanda
 import os
 import re
 import time
@@ -405,11 +407,10 @@ def confirm_email(request, cod):
         else:
             logger.warning(f"Email deja confirmat pentru utilizatorul {user.username}.")
             messages.warning(request, f"Email deja confirmat pentru utilizatorul {user.username}.")
-            # return render(request, 'email_confirmed.html') #, {'message': 'E-mailul a fost deja confirmat.'})
     except CustomUser.DoesNotExist:
         logger.error(f"Cod invalid sau utilizator inexistent: {cod}")
         messages.error(request, f"Cod invalid sau utilizator inexistent: {cod}")
-    return render(request, 'email_confirmed.html') #, {'message': 'Cod invalid sau utilizator inexistent.'})
+    return render(request, 'email_confirmed.html')
 
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
@@ -679,3 +680,62 @@ def cos_virtual(request):
     produse = Produse.objects.all()
     produse_serializate = json.dumps(list(produse.values('id', 'nume', 'pret', 'stoc')), cls=DjangoJSONEncoder)
     return render(request, 'cos_virtual.html', {'produse_json': produse_serializate})
+
+@login_required
+def cumpara_cos(request):
+    if request.method != "POST":
+        return JsonResponse({"error": "Metoda nepermisa. Folositi POST."}, status=405)
+    if request.method == "POST":
+        data = json.loads(request.body)
+        cos_virtual = data.get("cos", "")
+        if not cos_virtual:
+            return JsonResponse({"error": "Cosul este gol."}, status=400)
+        comenzi = []
+        utilizator = request.user
+        total_pret = 0
+        for item in cos_virtual:
+            produs_id, cantitate = item.split("/")
+            produs = Produse.objects.get(id=int(produs_id))
+            cantitate = int(cantitate)
+            if produs.stoc < cantitate:
+                return JsonResponse({"error": f"Stoc insuficient pentru produsul {produs.nume}."}, status=400)
+            produs.stoc -= cantitate
+            produs.save()
+            comanda = Comanda.objects.create(
+                utilizator=utilizator,
+                produs=produs,
+                cantitate=cantitate,
+                data_comanda=now()
+            )
+            comenzi.append(comanda)
+            total_pret += produs.pret * cantitate
+        factura_path = genereaza_factura(utilizator, comenzi, total_pret)
+        subject = "Factura comenzii tale"
+        body = f"Salut {utilizator.first_name},\n\nAtasat gasesti factura pentru comanda ta."
+        email = EmailMessage(subject, body, settings.DEFAULT_FROM_EMAIL, [utilizator.email])
+        email.attach_file(factura_path)
+        email.send()
+        return JsonResponse({"status": "success", "message": "Comanda a fost plasata cu succes!"})
+    return JsonResponse({"error": "Metoda invalida."}, status=405)
+
+def genereaza_factura(utilizator, comenzi, total_pret):
+    facturi_folder = os.path.join(settings.BASE_DIR, "temporar-facturi")
+    if not os.path.exists(facturi_folder):
+        os.makedirs(facturi_folder)
+    facturi_utilizator = os.path.join(facturi_folder, utilizator.username)
+    if not os.path.exists(facturi_utilizator):
+        os.makedirs(facturi_utilizator)
+    timestamp = int(time.time())
+    factura_path = os.path.join(facturi_utilizator, f"factura-{timestamp}.pdf")
+    c = canvas.Canvas(factura_path, pagesize=letter)
+    c.drawString(100, 750, f"Factura pentru {utilizator.first_name} {utilizator.last_name}")
+    c.drawString(100, 730, f"Email: {utilizator.email}")
+    c.drawString(100, 710, f"Data comenzii: {now().strftime('%Y-%m-%d %H:%M:%S')}")
+    c.drawString(100, 690, f"Contact administrator: {settings.DEFAULT_FROM_EMAIL}")
+    y = 670
+    for comanda in comenzi:
+        c.drawString(100, y, f"Produs: {comanda.produs.nume}, Cantitate: {comanda.cantitate}, Pret: {comanda.produs.pret} RON")
+        y -= 20
+    c.drawString(100, y - 20, f"Total produse: {len(comenzi)}, Pret final: {total_pret} RON")
+    c.save()
+    return factura_path

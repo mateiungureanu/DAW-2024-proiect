@@ -221,3 +221,12 @@ class Promotii(models.Model):
 
     def __str__(self):
         return self.nume
+
+class Comanda(models.Model):
+    utilizator = models.ForeignKey('CustomUser', on_delete=models.CASCADE)
+    produs = models.ForeignKey('Produse', on_delete=models.CASCADE)
+    cantitate = models.PositiveIntegerField()
+    data_comanda = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f"Comanda #{self.id} | {self.utilizator.username} - {self.produs.nume} ({self.cantitate})"
