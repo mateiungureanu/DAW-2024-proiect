@@ -239,3 +239,20 @@ INFO 2024-12-18 15:42:42,295 autoreload C:\Users\Matei\proiect_django\aplicatie1
 INFO 2024-12-18 15:42:42,949 autoreload Watching for file changes with StatReloader
 INFO 2024-12-18 15:43:00,166 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
 INFO 2024-12-18 15:43:00,816 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:46:55,078 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:52:33,077 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19453
+INFO 2024-12-18 15:52:53,647 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5424
+INFO 2024-12-18 15:53:00,090 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
+INFO 2024-12-18 15:53:46,809 basehttp "GET /admin/ HTTP/1.1" 200 16694
+INFO 2024-12-18 15:55:08,091 autoreload C:\Users\Matei\proiect_django\aplicatie1\admin.py changed, reloading.
+INFO 2024-12-18 15:55:08,989 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:55:29,603 autoreload C:\Users\Matei\proiect_django\aplicatie1\admin.py changed, reloading.
+INFO 2024-12-18 15:55:30,572 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:55:43,389 autoreload C:\Users\Matei\proiect_django\aplicatie1\admin.py changed, reloading.
+INFO 2024-12-18 15:55:44,109 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:57:39,116 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 15:57:42,530 basehttp "GET /admin/ HTTP/1.1" 200 17315
+INFO 2024-12-18 15:57:45,793 basehttp "GET /admin/aplicatie1/comanda/ HTTP/1.1" 200 20679
+INFO 2024-12-18 15:57:45,902 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2024-12-18 15:57:45,930 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
+INFO 2024-12-18 15:57:45,933 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0

@@ -3,7 +3,7 @@ from django.contrib.auth.admin import UserAdmin
 # Register your models here.
 
 from .models import Cinemauri, Angajati, Sali, Filme, Difuzari, Achizitii, Bilete
-from .models import CustomUser, Produse, Categorii, Vizualizari, Promotii
+from .models import CustomUser, Produse, Categorii, Vizualizari, Promotii, Comanda
 
 class CinemauriAdmin(admin.ModelAdmin):
     list_display = ('nume_cinema', 'oras')
@@ -113,3 +113,10 @@ class PromotiiAdmin(admin.ModelAdmin):
     list_display = ('nume', 'data_creare', 'data_expirare', 'reducere_procentuala', 'suma_minima_comanda')
     search_fields = ('nume', 'subiect')
     list_filter = ('data_creare', 'data_expirare', 'categorii')
+
+@admin.register(Comanda)
+class ComandaAdmin(admin.ModelAdmin):
+    list_display = ('id', 'utilizator', 'produs', 'cantitate', 'data_comanda')
+    search_fields = ('utilizator__username', 'produs__nume')
+    list_filter = ('data_comanda', 'produs')
+    ordering = ('-data_comanda',)
