@@ -30,10 +30,8 @@
         <p><strong>Pret total:</strong> <span id="total-pret">0</span> RON</p>
     </div>
     <button id="cumpara-cos"><strong>Cumpara</strong></button>
-
     <script>
         const produseDB = JSON.parse('{{ produse_json|safe }}');
-    
         function genereazaCos() {
             const idCos = localStorage.getItem("cos_virtual");
             if (!idCos) {
@@ -42,7 +40,6 @@
                 document.getElementById("total-pret").textContent = 0;
                 return;
             }
-    
             const vectorCos = idCos.split(",");
             const container = document.getElementById("cos-produse");
             container.innerHTML = "";
@@ -70,6 +67,21 @@
             document.getElementById("total-pret").textContent = totalPret.toFixed(2);
             document.getElementById("total-obiecte").textContent = totalObiecte;
         }
+        function sorteaza(criteriu) {
+            const container = document.getElementById("cos-produse");
+            const produse = Array.from(container.getElementsByClassName("produs"));
+            produse.sort((a, b) => {
+                if (criteriu === "nume") {
+                    return a.dataset.nume.localeCompare(b.dataset.nume);
+                } else if (criteriu === "pret") {
+                    return parseFloat(a.dataset.pret) - parseFloat(b.dataset.pret);
+                }
+            });
+            container.innerHTML = "";
+            produse.forEach(produs => container.appendChild(produs));
+        }
+        document.getElementById("sort-nume").onclick = () => sorteaza("nume");
+        document.getElementById("sort-pret").onclick = () => sorteaza("pret");
         document.getElementById("cumpara-cos").onclick = function() {
             const idCos = localStorage.getItem("cos_virtual");
             if (!idCos) {

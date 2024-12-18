@@ -256,3 +256,11 @@ INFO 2024-12-18 15:57:45,793 basehttp "GET /admin/aplicatie1/comanda/ HTTP/1.1" 
 INFO 2024-12-18 15:57:45,902 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2024-12-18 15:57:45,930 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 304 0
 INFO 2024-12-18 15:57:45,933 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 304 0
+INFO 2024-12-18 16:01:48,951 autoreload Watching for file changes with StatReloader
+INFO 2024-12-18 16:13:01,390 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19453
+INFO 2024-12-18 16:13:58,059 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 5424
+INFO 2024-12-18 16:14:31,716 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
+INFO 2024-12-18 16:23:32,175 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19453
+INFO 2024-12-18 16:23:41,126 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 6096
+INFO 2024-12-18 16:25:15,975 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 6202
+INFO 2024-12-18 16:25:26,908 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
