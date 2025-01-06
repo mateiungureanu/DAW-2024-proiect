@@ -36,6 +36,10 @@
                     let vector_cos = id_uri_cos ? id_uri_cos.split(",") : [];
                     let produsId = this.dataset["id"];
                     let stocDisponibil = parseInt(document.querySelector(`[data-id="${produsId}"]`).dataset["stoc"]);
+                    if (stocDisponibil === 0) {
+                        alert("Nu mai sunt suficiente produse in stoc!");
+                        return;
+                    }
                     let gasit = false;
                     for (let i in vector_cos) {
                         let [produsIdInCos, produsCantitate] = vector_cos[i].split("/");
@@ -133,7 +137,7 @@
                     if (event.key === "Enter") {
                         let produsId = input.dataset["id"];
                         let cantitateNoua = parseInt(input.value);
-                        let stocDisponibil = parseInt(this.dataset["stoc"]);
+                        let stocDisponibil = parseInt(document.querySelector(`[data-id="${produsId}"]`).dataset["stoc"]);
                         if (isNaN(cantitateNoua) || cantitateNoua < 1) {
                             input.value = 1;
                             return;
@@ -144,22 +148,20 @@
                             return;
                         }
                         let id_uri_cos = localStorage.getItem("cos_virtual");
-                        if (id_uri_cos) {
-                            let vector_cos = id_uri_cos.split(",");
-                            let gasit = false;
-                            for (let i in vector_cos) {
-                                let [produsId, produsCantitate] = vector_cos[i].split("/");
-                                if (produsId === input.dataset["id"]) {
-                                    vector_cos[i] = `${produsId}/${cantitateNoua}`;
-                                    gasit = true;
-                                    break;
-                                }
+                        let vector_cos = id_uri_cos ? id_uri_cos.split(",") : [];
+                        let gasit = false;
+                        for (let i in vector_cos) {
+                            let [produsIdInCos, produsCantitate] = vector_cos[i].split("/");
+                            if (produsIdInCos === produsId) {
+                                vector_cos[i] = `${produsId}/${cantitateNoua}`;
+                                gasit = true;
+                                break;
                             }
-                            if (!gasit) {
-                                vector_cos.push(`${produsId}/${cantitateNoua}`);
-                            }
-                            localStorage.setItem("cos_virtual", vector_cos.join(","));
                         }
+                        if (!gasit) {
+                            vector_cos.push(`${produsId}/${cantitateNoua}`);
+                        }
+                        localStorage.setItem("cos_virtual", vector_cos.join(","));
                         rosu();
                     }
                 });

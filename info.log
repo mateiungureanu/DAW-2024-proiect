@@ -323,3 +323,30 @@ INFO 2025-01-03 18:00:18,759 basehttp "GET /static/admin/css/login.css HTTP/1.1"
 INFO 2025-01-03 18:00:18,759 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
 INFO 2025-01-03 18:00:18,765 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
 INFO 2025-01-03 18:00:29,006 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 200 4321
+INFO 2025-01-06 19:10:34,331 autoreload Watching for file changes with StatReloader
+INFO 2025-01-06 19:10:43,132 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-01-06 19:10:43,256 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 835
+WARNING 2025-01-06 19:10:43,446 log Not Found: /favicon.ico
+WARNING 2025-01-06 19:10:43,447 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+INFO 2025-01-06 19:10:53,156 views Autentificare reusita pentru utilizatorul grief.
+INFO 2025-01-06 19:10:53,160 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-01-06 19:10:53,282 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1204
+INFO 2025-01-06 19:11:02,829 basehttp "GET /aplicatie1/cos_virtual HTTP/1.1" 301 0
+INFO 2025-01-06 19:11:02,983 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 6202
+INFO 2025-01-06 19:11:10,865 basehttp "GET /aplicatie1/lista_produse HTTP/1.1" 301 0
+INFO 2025-01-06 19:11:11,327 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19453
+INFO 2025-01-06 19:38:30,823 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19629
+INFO 2025-01-06 19:42:01,330 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19674
+INFO 2025-01-06 19:42:51,275 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19674
+INFO 2025-01-06 20:01:29,158 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19674
+INFO 2025-01-06 20:04:26,610 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19848
+INFO 2025-01-06 20:08:03,486 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 20296
+INFO 2025-01-06 20:11:33,707 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19618
+INFO 2025-01-06 20:11:35,685 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19618
+INFO 2025-01-06 20:11:38,056 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19618
+INFO 2025-01-06 20:16:33,435 autoreload Watching for file changes with StatReloader
+INFO 2025-01-06 20:18:32,560 autoreload Watching for file changes with StatReloader
+INFO 2025-01-06 20:18:36,027 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19567
+INFO 2025-01-06 20:19:50,854 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 6202
+INFO 2025-01-06 20:19:59,283 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
+INFO 2025-01-06 20:20:11,386 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1089

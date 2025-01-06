@@ -115,3 +115,5 @@ WARNING 2024-12-18 15:40:52,742 log Bad Request: /aplicatie1/cumpara_cos/
 WARNING 2024-12-18 15:40:52,743 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 400 53
 WARNING 2025-01-03 17:54:38,230 log Not Found: /favicon.ico
 WARNING 2025-01-03 17:54:38,231 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+WARNING 2025-01-06 19:10:43,446 log Not Found: /favicon.ico
+WARNING 2025-01-06 19:10:43,447 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
