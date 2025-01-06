@@ -350,3 +350,24 @@ INFO 2025-01-06 20:18:36,027 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 
 INFO 2025-01-06 20:19:50,854 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 6202
 INFO 2025-01-06 20:19:59,283 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
 INFO 2025-01-06 20:20:11,386 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 1089
+INFO 2025-01-06 20:33:21,619 autoreload Watching for file changes with StatReloader
+INFO 2025-01-06 20:33:23,873 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19567
+INFO 2025-01-06 20:33:32,958 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 6202
+WARNING 2025-01-06 20:34:07,251 log Not Found: /aplicatie1/produs_detail/6
+WARNING 2025-01-06 20:34:07,252 basehttp "GET /aplicatie1/produs_detail/6 HTTP/1.1" 404 15967
+WARNING 2025-01-06 20:34:13,134 log Not Found: /aplicatie1/produs_detail/7
+WARNING 2025-01-06 20:34:13,135 basehttp "GET /aplicatie1/produs_detail/7 HTTP/1.1" 404 15967
+WARNING 2025-01-06 20:34:15,524 log Not Found: /aplicatie1/produs_detail/8
+WARNING 2025-01-06 20:34:15,525 basehttp "GET /aplicatie1/produs_detail/8 HTTP/1.1" 404 15967
+WARNING 2025-01-06 20:34:18,066 log Not Found: /aplicatie1/produs_detail/9
+WARNING 2025-01-06 20:34:18,067 basehttp "GET /aplicatie1/produs_detail/9 HTTP/1.1" 404 15967
+WARNING 2025-01-06 20:34:22,665 log Not Found: /aplicatie1/produs_detail/14
+WARNING 2025-01-06 20:34:22,667 basehttp "GET /aplicatie1/produs_detail/14 HTTP/1.1" 404 15970
+WARNING 2025-01-06 20:34:46,657 log Not Found: /aplicatie1/produs_detail/
+WARNING 2025-01-06 20:34:46,659 basehttp "GET /aplicatie1/produs_detail/ HTTP/1.1" 404 15964
+INFO 2025-01-06 20:34:59,408 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 19567
+INFO 2025-01-06 20:35:00,775 basehttp "GET /aplicatie1/produs/11/ HTTP/1.1" 200 9525
+INFO 2025-01-06 20:35:06,489 basehttp "GET /aplicatie1/produs/7/ HTTP/1.1" 200 9526
+INFO 2025-01-06 20:35:11,558 basehttp "GET /aplicatie1/produs/13/ HTTP/1.1" 200 9523
+INFO 2025-01-06 20:38:18,005 basehttp "GET /aplicatie1/produs/13/ HTTP/1.1" 200 18157
+INFO 2025-01-06 20:38:21,595 basehttp "GET /aplicatie1/produs/13/ HTTP/1.1" 200 18157
