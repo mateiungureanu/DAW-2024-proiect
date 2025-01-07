@@ -870,3 +870,17 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'promotii' not found. 'promotii' is not a valid view function or pattern name.
 ERROR 2025-01-07 13:50:55,267 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 500 173376
+CRITICAL 2025-01-07 15:22:47,219 views Tentativa de inregistrare cu username-ul 'admin'.
+ERROR 2025-01-07 15:22:47,344 log Internal Server Error: /aplicatie1/register/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 375, in register
+    messages.critical(request, "Tentativa de inregistrare cu username-ul 'admin'.")
+    ^^^^^^^^^^^^^^^^^
+AttributeError: module 'django.contrib.messages' has no attribute 'critical'
+ERROR 2025-01-07 15:22:47,346 basehttp "POST /aplicatie1/register/ HTTP/1.1" 500 73208
+CRITICAL 2025-01-07 15:25:16,747 views Tentativa de inregistrare cu username-ul 'admin'.
+CRITICAL 2025-01-07 15:27:47,781 views Logari suspecte detectate pentru utilizatorul a de la IP: 127.0.0.1.

@@ -372,7 +372,7 @@ def register(request):
             username = form.cleaned_data['username']
             if username == 'admin':
                 logger.critical("Tentativa de inregistrare cu username-ul 'admin'.")
-                messages.critical(request, "Tentativa de inregistrare cu username-ul 'admin'.")
+                messages.error(request, "Tentativa de inregistrare cu username-ul 'admin'.")
                 adresa = form.cleaned_data['email']
                 subject="Cineva incearca sa ne preia site-ul"
                 message=f'Logare admin neautorizata de pe adresa {adresa}'
@@ -399,7 +399,7 @@ def register(request):
                 html_message=email_message,
             )
             logger.info(f"Utilizator creat: {user.username} | email: {user.email}.")
-            messages.success(request, f"Contul tau a fost creat cu succes.")
+            messages.success(request, "Contul tau a fost creat cu succes.")
             return redirect('user_login')
         else:
             logger.error("Formularul de inregistrare nu este valid.")
@@ -483,7 +483,7 @@ def user_login(request):
                 """
                 mail_admins(subject, message, html_message=html_message, fail_silently=False)
                 logger.critical(f"Logari suspecte detectate pentru utilizatorul {username} de la IP: {ip_address}.")
-                messages.critical(request, f"Logari suspecte detectate pentru utilizatorul {username} de la IP: {ip_address}.")
+                messages.error(request, f"Logari suspecte detectate pentru utilizatorul {username} de la IP: {ip_address}.")
     else:
         form = CustomLoginForm()
     permisiuni = obtine_permisiuni_meniu(request)

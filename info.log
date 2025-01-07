@@ -1386,3 +1386,31 @@ INFO 2025-01-07 14:06:28,593 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200
 INFO 2025-01-07 14:06:29,960 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7723
 INFO 2025-01-07 14:06:40,528 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7684
 INFO 2025-01-07 14:06:45,840 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+INFO 2025-01-07 15:22:18,861 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 15:22:25,067 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-01-07 15:22:25,159 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+INFO 2025-01-07 15:22:32,289 basehttp "GET /aplicatie1/register/ HTTP/1.1" 200 3783
+CRITICAL 2025-01-07 15:22:47,219 views Tentativa de inregistrare cu username-ul 'admin'.
+ERROR 2025-01-07 15:22:47,344 log Internal Server Error: /aplicatie1/register/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 375, in register
+    messages.critical(request, "Tentativa de inregistrare cu username-ul 'admin'.")
+    ^^^^^^^^^^^^^^^^^
+AttributeError: module 'django.contrib.messages' has no attribute 'critical'
+ERROR 2025-01-07 15:22:47,346 basehttp "POST /aplicatie1/register/ HTTP/1.1" 500 73208
+INFO 2025-01-07 15:25:10,759 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 15:25:11,517 autoreload Watching for file changes with StatReloader
+CRITICAL 2025-01-07 15:25:16,747 views Tentativa de inregistrare cu username-ul 'admin'.
+INFO 2025-01-07 15:25:18,416 basehttp "POST /aplicatie1/register/ HTTP/1.1" 200 33
+INFO 2025-01-07 15:27:35,667 basehttp "GET /aplicatie1/register/ HTTP/1.1" 200 3933
+INFO 2025-01-07 15:27:37,006 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+INFO 2025-01-07 15:27:41,099 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 200 2095
+INFO 2025-01-07 15:27:43,296 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 200 2095
+CRITICAL 2025-01-07 15:27:47,781 views Logari suspecte detectate pentru utilizatorul a de la IP: 127.0.0.1.
+INFO 2025-01-07 15:27:47,789 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 200 2254
+INFO 2025-01-07 15:31:10,918 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 15:31:11,574 autoreload Watching for file changes with StatReloader
