@@ -371,3 +371,1018 @@ INFO 2025-01-06 20:35:06,489 basehttp "GET /aplicatie1/produs/7/ HTTP/1.1" 200 9
 INFO 2025-01-06 20:35:11,558 basehttp "GET /aplicatie1/produs/13/ HTTP/1.1" 200 9523
 INFO 2025-01-06 20:38:18,005 basehttp "GET /aplicatie1/produs/13/ HTTP/1.1" 200 18157
 INFO 2025-01-06 20:38:21,595 basehttp "GET /aplicatie1/produs/13/ HTTP/1.1" 200 18157
+INFO 2025-01-07 11:11:20,602 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 11:11:23,768 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-01-07 11:11:23,912 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-01-07 11:11:23,952 basehttp "GET /static/admin/css/base.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:23,953 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:23,953 basehttp "GET /static/admin/css/login.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:23,954 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:23,954 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:23,954 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:23,958 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 304 0
+WARNING 2025-01-07 11:11:24,074 log Not Found: /favicon.ico
+WARNING 2025-01-07 11:11:24,075 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+INFO 2025-01-07 11:11:26,732 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+INFO 2025-01-07 11:11:26,814 basehttp "GET /admin/ HTTP/1.1" 200 17315
+INFO 2025-01-07 11:11:26,832 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:26,837 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:26,837 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,471 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14682
+INFO 2025-01-07 11:11:28,497 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,497 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,498 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,498 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,498 basehttp "GET /static/admin/js/core.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,501 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,501 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,502 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,503 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,503 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,511 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:28,572 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 11:11:28,592 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,672 basehttp "GET /admin/auth/group/3/change/ HTTP/1.1" 200 20791
+INFO 2025-01-07 11:11:30,696 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,697 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,697 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,697 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,700 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,703 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,747 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 11:11:30,779 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,779 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 304 0
+INFO 2025-01-07 11:11:30,779 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 304 0
+WARNING 2025-01-07 11:16:21,056 log Not Found: /
+WARNING 2025-01-07 11:16:21,057 basehttp "GET / HTTP/1.1" 404 2321
+INFO 2025-01-07 11:17:29,332 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14682
+INFO 2025-01-07 11:17:30,556 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 20816
+INFO 2025-01-07 11:17:30,627 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 11:35:12,476 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14682
+INFO 2025-01-07 11:35:25,528 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+ERROR 2025-01-07 11:35:25,780 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.groups.filter(name='Moderatori').exists"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 466, in user_login
+    return render(request, 'login.html', {'form': form})
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(name='Moderatori').exists' from 'user.groups.filter(name='Moderatori').exists'
+ERROR 2025-01-07 11:35:25,787 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 500 220428
+WARNING 2025-01-07 11:35:25,935 log Not Found: /favicon.ico
+WARNING 2025-01-07 11:35:25,936 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+ERROR 2025-01-07 11:37:25,136 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.groups.filter(name='Moderatori').exists"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 466, in user_login
+    return render(request, 'login.html', {'form': form})
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(name='Moderatori').exists' from 'user.groups.filter(name='Moderatori').exists'
+ERROR 2025-01-07 11:37:25,140 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 500 220561
+ERROR 2025-01-07 11:37:29,706 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.groups.filter(name='Moderatori').exists"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 466, in user_login
+    return render(request, 'login.html', {'form': form})
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(name='Moderatori').exists' from 'user.groups.filter(name='Moderatori').exists'
+ERROR 2025-01-07 11:37:29,710 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 500 219862
+ERROR 2025-01-07 11:39:15,105 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.groups.filter(name='Moderatori').exists"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 466, in user_login
+    return render(request, 'login.html', {'form': form})
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(name='Moderatori').exists' from 'user.groups.filter(name='Moderatori').exists'
+ERROR 2025-01-07 11:39:15,110 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 500 243966
+INFO 2025-01-07 11:39:25,728 basehttp "GET /aplicatie1/user_logout HTTP/1.1" 301 0
+INFO 2025-01-07 11:39:26,040 views Utilizatorul  s-a deconectat.
+INFO 2025-01-07 11:39:26,102 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+ERROR 2025-01-07 11:39:26,214 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.groups.filter(name='Moderatori').exists"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 466, in user_login
+    return render(request, 'login.html', {'form': form})
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(name='Moderatori').exists' from 'user.groups.filter(name='Moderatori').exists'
+ERROR 2025-01-07 11:39:26,220 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 500 243978
+ERROR 2025-01-07 11:40:50,020 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 180, in translate_token
+    op = OPERATORS[token]
+         ~~~~~~~~~^^^^^^^
+KeyError: "user.groups.filter(name='Moderatori').exists"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 466, in user_login
+    return render(request, 'login.html', {'form': form})
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 199, in render
+    template = context.template.engine.select_template(template_name)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 208, in select_template
+    return self.get_template(template_name)
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 177, in get_template
+    template, origin = self.find_template(template_name)
+                       ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py", line 159, in find_template
+    template = loader.get_template(name, skip=skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py", line 57, in get_template
+    template = super().get_template(template_name, skip)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py", line 28, in get_template
+    return Template(
+        contents,
+    ...<2 lines>...
+        self.engine,
+    )
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 154, in __init__
+    self.nodelist = self.compile_nodelist()
+                    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 196, in compile_nodelist
+    nodelist = parser.parse()
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 962, in do_if
+    nodelist = parser.parse(("elif", "else", "endif"))
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 518, in parse
+    raise self.error(token, e)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 516, in parse
+    compiled_result = compile_func(self, token)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 961, in do_if
+    condition = TemplateIfParser(parser, bits).parse()
+                ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 894, in __init__
+    super().__init__(*args, **kwargs)
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 171, in __init__
+    mapped_tokens.append(self.translate_token(token))
+                         ~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py", line 182, in translate_token
+    return self.create_var(token)
+           ~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 897, in create_var
+    return TemplateLiteral(self.template_parser.compile_filter(value), value)
+                           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 605, in compile_filter
+    return FilterExpression(token, self)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 706, in __init__
+    raise TemplateSyntaxError(
+    ...<2 lines>...
+    )
+django.template.exceptions.TemplateSyntaxError: Could not parse the remainder: '(name='Moderatori').exists' from 'user.groups.filter(name='Moderatori').exists'
+ERROR 2025-01-07 11:40:50,025 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 500 244462
+INFO 2025-01-07 11:54:33,968 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 11:54:34,804 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 11:58:55,100 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 11:58:55,788 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:02:39,743 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:02:40,483 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:05:56,853 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:05:57,489 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:11:03,034 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:11:03,705 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:11:09,133 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:11:09,809 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:27:32,266 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:27:32,899 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:28:44,997 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:28:45,712 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:29:30,490 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:29:31,171 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:30:40,282 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:30:40,927 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:31:38,881 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:31:39,562 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:32:27,418 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:32:28,071 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:33:12,929 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:33:13,636 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:34:28,791 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:34:29,440 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:37:14,574 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:37:15,262 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:38:32,683 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-07 12:38:50,094 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 494, in user_login
+    return render(request, 'login.html', context)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'filtrare_filme_2' not found. 'filtrare_filme_2' is not a valid view function or pattern name.
+ERROR 2025-01-07 12:38:50,098 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 500 147252
+INFO 2025-01-07 12:39:28,685 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2025-01-07 12:39:29,333 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-07 12:39:31,792 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 494, in user_login
+    return render(request, 'login.html', context)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'contact' not found. 'contact' is not a valid view function or pattern name.
+ERROR 2025-01-07 12:39:31,795 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 500 147077
+INFO 2025-01-07 12:39:44,913 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2025-01-07 12:39:45,632 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:39:46,670 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 12:39:58,595 basehttp "GET /aplicatie1/lista_filme/ HTTP/1.1" 200 1820
+INFO 2025-01-07 12:40:00,583 basehttp "GET /aplicatie1/filtrare_filme_2/ HTTP/1.1" 200 2978
+INFO 2025-01-07 12:40:02,237 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 20677
+INFO 2025-01-07 12:40:10,145 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:40:15,190 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:40:15,257 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:45:10,556 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:45:11,248 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:45:20,226 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:47:39,154 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:47:39,327 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:47:42,119 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:47:43,327 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:47:43,395 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:48:27,145 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:48:27,781 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:48:30,912 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:48:32,466 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:48:32,519 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:49:38,919 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:49:39,557 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:49:41,805 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:49:43,217 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:49:43,270 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:51:09,951 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2025-01-07 12:51:10,644 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 12:51:18,658 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:51:19,806 basehttp "GET /aplicatie1/filtrare_filme_2/ HTTP/1.1" 200 2978
+INFO 2025-01-07 12:51:21,098 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 20677
+INFO 2025-01-07 12:51:22,552 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:51:23,609 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:51:23,679 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:51:27,830 basehttp "GET /aplicatie1/filtrare_filme_2/ HTTP/1.1" 200 2978
+INFO 2025-01-07 12:51:29,157 basehttp "GET /aplicatie1/lista_filme/ HTTP/1.1" 200 1820
+INFO 2025-01-07 12:51:30,079 basehttp "GET /aplicatie1/lista_cinemauri/ HTTP/1.1" 200 1898
+INFO 2025-01-07 12:51:30,746 basehttp "GET /aplicatie1/contact HTTP/1.1" 200 2955
+INFO 2025-01-07 12:51:32,716 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:51:34,871 basehttp "GET /aplicatie1/register/ HTTP/1.1" 200 3783
+INFO 2025-01-07 12:51:37,140 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 12:51:41,861 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:51:41,917 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+WARNING 2025-01-07 12:53:18,872 log Not Found: /aplicatie1/compara_cos
+WARNING 2025-01-07 12:53:18,872 basehttp "GET /aplicatie1/compara_cos HTTP/1.1" 404 16020
+INFO 2025-01-07 12:53:24,952 basehttp "GET /aplicatie1/cumpara_cos HTTP/1.1" 301 0
+INFO 2025-01-07 12:53:25,330 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 12:53:25,495 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 12:53:46,336 basehttp "GET /admin/ HTTP/1.1" 200 17315
+INFO 2025-01-07 12:53:55,662 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 12:53:55,737 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 12:53:55,804 basehttp "GET /static/admin/img/icon-yes.svg HTTP/1.1" 200 436
+INFO 2025-01-07 12:53:55,805 basehttp "GET /static/admin/img/icon-no.svg HTTP/1.1" 200 560
+INFO 2025-01-07 12:53:55,893 basehttp "GET /static/admin/img/sorting-icons.svg HTTP/1.1" 200 1097
+INFO 2025-01-07 12:53:55,893 basehttp "GET /static/admin/img/icon-viewlink.svg HTTP/1.1" 200 581
+ERROR 2025-01-07 12:54:21,592 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 474, in user_login
+    if (current_time - time) < datetime.timedelta(minutes=2)
+                               ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
+ERROR 2025-01-07 12:54:21,595 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 500 72323
+INFO 2025-01-07 12:56:37,053 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:56:37,842 autoreload Watching for file changes with StatReloader
+ERROR 2025-01-07 12:56:42,262 log Internal Server Error: /aplicatie1/user_login/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 474, in user_login
+    if (current_time - time) < datetime.timedelta(minutes=2)
+                               ^^^^^^^^^^^^^^^^^^
+AttributeError: type object 'datetime.datetime' has no attribute 'timedelta'
+ERROR 2025-01-07 12:56:42,264 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 500 72323
+INFO 2025-01-07 12:56:50,542 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 12:56:51,235 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 13:00:05,577 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 13:00:06,262 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 13:00:16,384 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 2104
+INFO 2025-01-07 13:00:23,945 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 2104
+INFO 2025-01-07 13:00:55,991 views Autentificare reusita pentru utilizatorul genghischan.
+INFO 2025-01-07 13:00:55,993 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:00:56,056 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2218
+INFO 2025-01-07 13:01:02,463 views Utilizatorul genghischan s-a deconectat.
+INFO 2025-01-07 13:01:02,476 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:01:02,539 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:01:04,396 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 13:01:05,981 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:01:06,035 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:01:14,586 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:01:14,655 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:01:35,126 views Autentificare reusita pentru utilizatorul genghischan.
+INFO 2025-01-07 13:01:35,128 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:01:35,186 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2218
+INFO 2025-01-07 13:05:20,509 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 13:05:21,239 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 13:06:09,839 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2103
+INFO 2025-01-07 13:06:13,837 views Utilizatorul genghischan s-a deconectat.
+INFO 2025-01-07 13:06:13,850 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:06:13,906 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:06:15,295 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7506
+INFO 2025-01-07 13:06:16,856 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:06:16,903 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:06:58,475 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7522
+INFO 2025-01-07 13:06:59,947 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:06:59,999 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:07:54,985 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:07:55,041 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:08:02,198 views Autentificare reusita pentru utilizatorul genghischan.
+INFO 2025-01-07 13:08:02,200 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:08:02,249 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2218
+INFO 2025-01-07 13:08:17,435 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 13:08:18,152 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 13:08:18,599 views Utilizatorul genghischan s-a deconectat.
+INFO 2025-01-07 13:08:18,615 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:08:18,674 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:08:19,217 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7312
+INFO 2025-01-07 13:08:20,609 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:08:20,655 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:08:24,543 basehttp "GET /aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:08:24,592 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:08:34,739 views Autentificare reusita pentru utilizatorul genghischan.
+INFO 2025-01-07 13:08:34,741 basehttp "POST /aplicatie1/user_login/?next=/aplicatie1/cumpara_cos/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:08:34,805 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2218
+INFO 2025-01-07 13:08:38,884 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7209
+INFO 2025-01-07 13:08:42,008 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
+INFO 2025-01-07 13:47:45,585 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
+INFO 2025-01-07 13:47:46,258 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 13:47:49,498 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7468
+INFO 2025-01-07 13:47:52,765 views Utilizatorul genghischan s-a deconectat.
+INFO 2025-01-07 13:47:52,780 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:47:52,841 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:47:56,500 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 20677
+INFO 2025-01-07 13:47:59,904 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7572
+WARNING 2025-01-07 13:48:02,089 log Not Found: /login
+WARNING 2025-01-07 13:48:02,090 basehttp "GET /login HTTP/1.1" 404 2354
+INFO 2025-01-07 13:48:26,294 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7576
+WARNING 2025-01-07 13:48:27,666 log Not Found: /aplicatie1/cos_virtual/url /login
+WARNING 2025-01-07 13:48:27,666 basehttp "GET /aplicatie1/cos_virtual/url%20/login HTTP/1.1" 404 16055
+INFO 2025-01-07 13:48:42,947 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7604
+WARNING 2025-01-07 13:48:44,207 log Not Found: /aplicatie1/login
+WARNING 2025-01-07 13:48:44,208 basehttp "GET /aplicatie1/login HTTP/1.1" 404 16002
+WARNING 2025-01-07 13:48:59,017 log Not Found: /aplicatie1/login
+WARNING 2025-01-07 13:48:59,018 basehttp "GET /aplicatie1/login HTTP/1.1" 404 16002
+INFO 2025-01-07 13:49:02,229 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7609
+INFO 2025-01-07 13:49:03,052 basehttp "GET /aplicatie1/user_login HTTP/1.1" 301 0
+INFO 2025-01-07 13:49:03,412 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+INFO 2025-01-07 13:49:15,819 views Autentificare reusita pentru utilizatorul jerma985.
+INFO 2025-01-07 13:49:15,821 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:49:15,870 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2221
+INFO 2025-01-07 13:49:17,614 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7505
+INFO 2025-01-07 13:49:27,939 basehttp "POST /aplicatie1/cumpara_cos/ HTTP/1.1" 200 69
+INFO 2025-01-07 13:50:42,255 views Utilizatorul jerma985 s-a deconectat.
+INFO 2025-01-07 13:50:42,269 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:50:42,321 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:50:55,014 views Autentificare reusita pentru utilizatorul viceroy.
+INFO 2025-01-07 13:50:55,016 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 302 0
+ERROR 2025-01-07 13:50:55,263 log Internal Server Error: /aplicatie1/profile/
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\decorators.py", line 60, in _view_wrapper
+    return view_func(request, *args, **kwargs)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\cache.py", line 80, in _view_wrapper
+    response = view_func(request, *args, **kwargs)
+  File "C:\Users\Matei\proiect_django\aplicatie1\views.py", line 515, in profile
+    return render(request, 'profile.html', context)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py", line 25, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py", line 107, in render
+    return self.template.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py", line 210, in render
+    return template.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 173, in render
+    return self._render(context)
+           ~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+           ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 327, in render
+    return nodelist.render(context)
+           ~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 1008, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 969, in render_annotated
+    return self.render(context)
+           ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py", line 480, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\base.py", line 88, in reverse
+    return resolver._reverse_with_prefix(view, prefix, *args, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\resolvers.py", line 831, in _reverse_with_prefix
+    raise NoReverseMatch(msg)
+django.urls.exceptions.NoReverseMatch: Reverse for 'promotii' not found. 'promotii' is not a valid view function or pattern name.
+ERROR 2025-01-07 13:50:55,267 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 500 173376
+INFO 2025-01-07 13:51:15,417 autoreload C:\Users\Matei\proiect_django\aplicatie1\urls.py changed, reloading.
+INFO 2025-01-07 13:51:16,190 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 13:51:17,084 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2657
+INFO 2025-01-07 13:51:20,024 basehttp "GET /aplicatie1/lista_utilizatori/ HTTP/1.1" 200 2177
+INFO 2025-01-07 13:51:23,106 basehttp "GET /aplicatie1/utilizator/9/ HTTP/1.1" 200 2122
+INFO 2025-01-07 13:51:25,376 basehttp "GET /aplicatie1/promotii/ HTTP/1.1" 200 3088
+INFO 2025-01-07 13:51:45,211 basehttp "GET /aplicatie1/creare_angajati/ HTTP/1.1" 200 4660
+INFO 2025-01-07 13:52:58,546 basehttp "GET /admin/ HTTP/1.1" 200 17315
+INFO 2025-01-07 13:53:03,439 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14682
+INFO 2025-01-07 13:53:03,506 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:53:04,442 basehttp "GET /admin/ HTTP/1.1" 200 17315
+INFO 2025-01-07 13:53:07,815 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 13:53:07,872 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:53:10,014 basehttp "GET /admin/aplicatie1/customuser/10/change/ HTTP/1.1" 200 36075
+INFO 2025-01-07 13:53:10,086 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:53:10,104 basehttp "GET /static/admin/js/calendar.js HTTP/1.1" 200 9141
+INFO 2025-01-07 13:53:10,111 basehttp "GET /static/admin/js/admin/DateTimeShortcuts.js HTTP/1.1" 200 19319
+INFO 2025-01-07 13:53:10,130 basehttp "GET /static/admin/img/tooltag-arrowright.svg HTTP/1.1" 200 280
+INFO 2025-01-07 13:53:10,154 basehttp "GET /static/admin/img/icon-clock.svg HTTP/1.1" 200 677
+INFO 2025-01-07 13:53:10,154 basehttp "GET /static/admin/img/icon-calendar.svg HTTP/1.1" 200 1086
+INFO 2025-01-07 13:53:12,661 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 13:53:14,215 basehttp "GET /admin/aplicatie1/customuser/6/change/ HTTP/1.1" 200 36055
+INFO 2025-01-07 13:53:14,273 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:53:16,264 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 13:53:17,167 basehttp "GET /admin/aplicatie1/customuser/9/change/ HTTP/1.1" 200 36031
+INFO 2025-01-07 13:53:17,233 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:53:18,386 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 13:53:19,361 basehttp "GET /admin/aplicatie1/customuser/11/change/ HTTP/1.1" 200 36070
+INFO 2025-01-07 13:53:19,427 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:53:20,646 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 13:53:21,541 basehttp "GET /admin/aplicatie1/customuser/12/change/ HTTP/1.1" 200 36064
+INFO 2025-01-07 13:53:21,607 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:54:52,158 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
+INFO 2025-01-07 13:54:53,979 basehttp "GET /admin/aplicatie1/customuser/9/change/ HTTP/1.1" 200 36031
+INFO 2025-01-07 13:54:54,045 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:55:01,786 basehttp "POST /admin/aplicatie1/customuser/9/change/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:55:01,846 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21907
+INFO 2025-01-07 13:55:01,913 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-01-07 13:55:08,238 views Utilizatorul viceroy s-a deconectat.
+INFO 2025-01-07 13:55:08,252 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:55:08,299 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:55:19,953 views Autentificare reusita pentru utilizatorul grief.
+INFO 2025-01-07 13:55:19,955 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:55:20,004 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2429
+INFO 2025-01-07 13:55:27,028 basehttp "GET /aplicatie1/lista_utilizatori/ HTTP/1.1" 200 1949
+INFO 2025-01-07 13:55:31,089 views Utilizatorul grief s-a deconectat.
+INFO 2025-01-07 13:55:31,104 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:55:31,157 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 13:55:38,217 views Autentificare reusita pentru utilizatorul viceroy.
+INFO 2025-01-07 13:55:38,219 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:55:38,270 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2657
+INFO 2025-01-07 13:55:42,065 basehttp "GET /aplicatie1/lista_angajati/ HTTP/1.1" 200 2300
+INFO 2025-01-07 13:55:43,473 basehttp "GET /aplicatie1/creare_angajati/ HTTP/1.1" 200 4660
+INFO 2025-01-07 13:55:45,658 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 200 2542
+INFO 2025-01-07 13:55:46,636 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7954
+INFO 2025-01-07 13:55:51,759 views Utilizatorul viceroy s-a deconectat.
+INFO 2025-01-07 13:55:51,774 basehttp "GET /aplicatie1/user_logout/ HTTP/1.1" 302 0
+INFO 2025-01-07 13:55:51,928 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 2059
+INFO 2025-01-07 14:06:28,593 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+INFO 2025-01-07 14:06:29,960 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7723
+INFO 2025-01-07 14:06:40,528 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7684
+INFO 2025-01-07 14:06:45,840 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942

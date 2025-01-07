@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Lista Angajați</title>
+    <title>Lista Angajati</title>
 </head>
 <body>
-    <h1>Lista Angajați</h1>
+    {% include "meniu.html" %}
+    <h1>Lista Angajati</h1>
     <ul>
         {% for angajat in angajati %}
             <li><a href="{% url 'angajat_detail' angajat.id %}">{{ angajat.nume }} {{ angajat.prenume }}</a></li>

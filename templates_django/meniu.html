@@ -1,0 +1,33 @@
+<nav>
+    <ul style="list-style-type: none; padding: 0; display: flex; gap: 15px; background-color: #f2f2f2; padding: 10px;">
+        {% if is_moderator %}
+            <li><a href="{% url 'lista_utilizatori' %}" style="text-decoration: none;">Lista utilizatori</a></li>
+            <li><a href="{% url 'promotii' %}" style="text-decoration: none;">Promotii</a></li>
+        {% endif %}
+
+        {% if is_admin_angajat %}
+            <li><a href="{% url 'lista_angajati' %}" style="text-decoration: none;">Lista angajati</a></li>
+            <li><a href="{% url 'creare_angajati' %}" style="text-decoration: none;">Creare angajat</a></li>
+        {% endif %}
+
+        <li><a href="{% url 'profile' %}" style="text-decoration: none;">Profil</a></li>
+        <li><a href="{% url 'cos_virtual' %}" style="text-decoration: none;">Cos</a></li>
+        <li><a href="{% url 'lista_produse' %}" style="text-decoration: none;">Produse</a></li>
+        <li><a href="{% url 'filtrare_filme_2' %}" style="text-decoration: none;">Filtrare filme</a></li>
+        <li><a href="{% url 'lista_filme' %}" style="text-decoration: none;">Filme</a></li>
+        <li><a href="{% url 'lista_cinemauri' %}" style="text-decoration: none;">Cinematografe</a></li>
+        <li><a href="{% url 'contact' %}" style="text-decoration: none;">Contact</a></li>
+        
+        <li>
+            {% if is_authenticated %}
+                <a href="{% url 'user_logout' %}" style="text-decoration: none;">Log out</a>
+            {% else %}
+                <a href="{% url 'user_login' %}" style="text-decoration: none;">Log in</a>
+            {% endif %}
+        </li>
+
+        {% if not is_authenticated %}
+            <li><a href="{% url 'register' %}" style="text-decoration: none;">Sign up</a></li>
+        {% endif %}
+    </ul>
+</nav>

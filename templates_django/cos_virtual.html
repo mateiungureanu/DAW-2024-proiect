@@ -19,6 +19,7 @@
     </style>
 </head>
 <body>
+    {% include "meniu.html" %}
     <h1>Cos Virtual</h1>
     <div class="sort-buttons">
         <button id="sort-nume">Sorteaza după nume</button>
@@ -29,7 +30,10 @@
         <p><strong>Total obiecte:</strong> <span id="total-obiecte">0</span></p>
         <p><strong>Pret total:</strong> <span id="total-pret">0</span> RON</p>
     </div>
-    <button id="cumpara-cos"><strong>Cumpara</strong></button>
+    <button id="cumpara-cos" data-is-logged-in="{{ is_authenticated }}"><strong>Cumpara</strong></button>
+    {% if not is_authenticated %}
+        <p>Trebuie sa te loghezi ca sa poti plasa o comanda.</p>
+    {% endif %}
     <script>
         const produseDB = JSON.parse('{{ produse_json|safe }}');
         function genereazaCos() {
@@ -83,6 +87,11 @@
         document.getElementById("sort-nume").onclick = () => sorteaza("nume");
         document.getElementById("sort-pret").onclick = () => sorteaza("pret");
         document.getElementById("cumpara-cos").onclick = function() {
+            const isLoggedIn = document.getElementById("cumpara-cos").getAttribute("data-is-logged-in") === 'True';
+            if (!isLoggedIn) {
+                window.location.href = 'http://localhost:8000/aplicatie1/user_login';
+                return;
+            }
             const idCos = localStorage.getItem("cos_virtual");
             if (!idCos) {
                 alert("Cosul este gol!");

@@ -1,3 +1,5 @@
+{% include "meniu.html" %}
+
 <form method="post" action="{% url 'creare_angajati' %}">
     {% csrf_token %}
     {{ form.non_field_errors }}

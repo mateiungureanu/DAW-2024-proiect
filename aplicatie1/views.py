@@ -291,10 +291,13 @@ def filtrare_filme_2(request):
     else:
         form = FilmeFilterForm()
         filme = Filme.objects.all().order_by('id')
-    return render(request, 'filme_filtrare.html', {
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
         'form': form,
-        'filme': filme
-    })
+        'filme': filme,
+        **permisiuni,
+    }
+    return render(request, 'filme_filtrare.html', context)
 
 def contact(request):
     if request.method == 'POST':
@@ -326,13 +329,20 @@ def contact(request):
             return redirect('mesaj_trimis')
     else:
         form = ContactForm()
-    return render(request, 'contact.html', {'form': form})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'form': form,
+        **permisiuni,
+    }
+    return render(request, 'contact.html', context)
 
 def creare_angajati(request):
     if not request.user.has_perm('aplicatie1.view_angajati'):
+        permisiuni = obtine_permisiuni_meniu(request)
         return HttpResponseForbidden(render(request, '403.html', {
             'titlu': "Eroare adaugare angajati",
             'mesaj': "Nu ai voie sa adaugi angajati.",
+            **permisiuni,
         }))
     if request.method == 'POST':
         form = AngajatiForm(request.POST)
@@ -347,7 +357,12 @@ def creare_angajati(request):
             return redirect('lista_angajati')
     else:
         form = AngajatiForm()
-    return render(request, 'creare_angajati.html', {'form': form})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'form': form,
+        **permisiuni,
+    }
+    return render(request, 'creare_angajati.html', context)
 
 def register(request):
     if request.method == 'POST':
@@ -393,7 +408,12 @@ def register(request):
         form = CustomUserCreationForm()
         logger.debug("Formularul de inregistrare a fost initializat.")
         messages.debug(request, "Formularul de inregistrare a fost initializat.")
-    return render(request, 'register.html', {'form': form})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'form': form,
+        **permisiuni,
+    }
+    return render(request, 'register.html', context)
 
 def confirm_email(request, cod):
     try:
@@ -403,14 +423,18 @@ def confirm_email(request, cod):
             user.is_active = True
             user.save()
             logger.info(f"Email confirmat pentru utilizatorul {user.username}.")
-            return render(request, 'email_confirmed.html', {'user': user})
         else:
             logger.warning(f"Email deja confirmat pentru utilizatorul {user.username}.")
             messages.warning(request, f"Email deja confirmat pentru utilizatorul {user.username}.")
     except CustomUser.DoesNotExist:
         logger.error(f"Cod invalid sau utilizator inexistent: {cod}")
         messages.error(request, f"Cod invalid sau utilizator inexistent: {cod}")
-    return render(request, 'email_confirmed.html')
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'user': user if user.email_confirmat else None,
+        **permisiuni,
+    }
+    return render(request, 'email_confirmed.html', context)
 
 def get_client_ip(request):
     x_forwarded_for = request.META.get('HTTP_X_FORWARDED_FOR')
@@ -447,7 +471,7 @@ def user_login(request):
             failed_logins[username].append((ip_address, current_time))
             failed_logins[username] = [
                 (ip, time) for ip, time in failed_logins[username]
-                if (current_time - time) < datetime.timedelta(minutes=2)
+                if (current_time - time) < timedelta(minutes=2)
             ]
             if len(failed_logins[username]) >= 3:
                 subject = "Logari suspecte"
@@ -461,9 +485,13 @@ def user_login(request):
                 logger.critical(f"Logari suspecte detectate pentru utilizatorul {username} de la IP: {ip_address}.")
                 messages.critical(request, f"Logari suspecte detectate pentru utilizatorul {username} de la IP: {ip_address}.")
     else:
-        
         form = CustomLoginForm()
-    return render(request, 'login.html', {'form': form})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'form': form,
+        **permisiuni,
+    }
+    return render(request, 'login.html', context)
 
 @login_required
 @never_cache
@@ -479,7 +507,12 @@ def profile(request):
     }
     request.session['user_data'] = user_data
     logger.debug(f"Profil accesat de utilizatorul {request.user.username}.")
-    return render(request, 'profile.html', {'user_data': user_data})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'user_data': user_data,
+        **permisiuni,
+    }
+    return render(request, 'profile.html', context)
 
 @login_required
 def change_password(request):
@@ -496,7 +529,12 @@ def change_password(request):
             messages.warning(request, "A aparut o eroare. Va rugam sa verificati datele.")
     else:
         form = CustomPasswordChangeForm(user=request.user)
-    return render(request, 'change_password.html', {'form': form})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'form': form,
+        **permisiuni,
+    }
+    return render(request, 'change_password.html', context)
 
 def user_logout(request):
     logger.info(f"Utilizatorul {request.user.username} s-a deconectat.")
@@ -592,7 +630,12 @@ def pagina_promotii(request):
             return redirect('promotie_lansata')
     else:
         form = PromotieForm()
-    return render(request, 'promotii.html', {'form': form})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'form': form,
+        **permisiuni,
+    }
+    return render(request, 'promotii.html', context)
 
 def ofera_permisiune(request):
     if request.user.is_authenticated:
@@ -605,12 +648,15 @@ def ofera_permisiune(request):
 
 def oferta(request):
     if request.user.is_authenticated and request.user.has_perm('aplicatie1.vizualizeaza_oferta'):
-            logger.info(f"Utilizatorul {request.user.username} si-a luat teapa.")
-            return HttpResponse("Teapa! Nu e nicio oferta! ;)")
-    return render(request, '403.html', {
+        logger.info(f"Utilizatorul {request.user.username} si-a luat teapa.")
+        return HttpResponse("Teapa! Nu e nicio oferta! ;)")
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
         "titlu": "Eroare afisare oferta",
         "mesaj": "Nu ai voie sa vizualizezi oferta.",
-    })
+        **permisiuni,
+    }
+    return render(request, '403.html', context)
 
 @login_required
 def block_user(request, user_id):
@@ -638,53 +684,108 @@ def unblock_user(request, user_id):
 
 def cinema_detail(request, id):
     cinema = get_object_or_404(Cinemauri, id=id)
-    return render(request, 'cinema_detail.html', {'cinema': cinema})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'cinema': cinema,
+        **permisiuni,
+    }
+    return render(request, 'cinema_detail.html', context)
 
 def angajat_detail(request, id):
     angajat = get_object_or_404(Angajati, id=id)
-    return render(request, 'angajat_detail.html', {'angajat': angajat})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'angajat': angajat,
+        **permisiuni,
+    }
+    return render(request, 'angajat_detail.html', context)
 
 def film_detail(request, id):
     film = get_object_or_404(Filme, id=id)
-    return render(request, 'film_detail.html', {'film': film})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'film': film,
+        **permisiuni,
+    }
+    return render(request, 'film_detail.html', context)
 
 def produs_detail(request, id):
     produs = get_object_or_404(Produse, id=id)
-    return render(request, 'produs_detail.html', {'produs': produs})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'produs': produs,
+        **permisiuni,
+    }
+    return render(request, 'produs_detail.html', context)
 
 def utilizator_detail(request, id):
     utilizator = get_object_or_404(CustomUser, id=id)
-    return render(request, 'utilizator_detail.html', {'utilizator': utilizator})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'utilizator': utilizator,
+        **permisiuni,
+    }
+    return render(request, 'utilizator_detail.html', context)
 
 def lista_cinemauri(request):
     cinemauri = Cinemauri.objects.all()
-    return render(request, 'lista_cinemauri.html', {'cinemauri': cinemauri})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'cinemauri': cinemauri,
+        **permisiuni,
+    }
+    return render(request, 'lista_cinemauri.html', context)
 
 def lista_angajati(request):
     angajati = Angajati.objects.all()
-    return render(request, 'lista_angajati.html', {'angajati': angajati})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'angajati': angajati,
+        **permisiuni,
+    }
+    return render(request, 'lista_angajati.html', context)
 
 def lista_filme(request):
     filme = Filme.objects.all()
-    return render(request, 'lista_filme.html', {'filme': filme})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'filme': filme,
+        **permisiuni,
+    }
+    return render(request, 'lista_filme.html', context)
 
 def lista_produse(request):
     produse = Produse.objects.all()
-    return render(request, 'lista_produse.html', {'produse': produse})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'produse': produse,
+        **permisiuni,
+    }
+    return render(request, 'lista_produse.html', context)
 
 def lista_utilizatori(request):
     utilizatori = CustomUser.objects.all()
-    return render(request, 'lista_utilizatori.html', {'utilizatori': utilizatori})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'utilizatori': utilizatori,
+        **permisiuni,
+    }
+    return render(request, 'lista_utilizatori.html', context)
 
 def cos_virtual(request):
     produse = Produse.objects.all()
     produse_serializate = json.dumps(list(produse.values('id', 'nume', 'pret', 'stoc')), cls=DjangoJSONEncoder)
-    return render(request, 'cos_virtual.html', {'produse_json': produse_serializate})
+    permisiuni = obtine_permisiuni_meniu(request)
+    context = {
+        'produse_json': produse_serializate,
+        **permisiuni,
+    }
+    return render(request, 'cos_virtual.html', context)
 
 @login_required
 def cumpara_cos(request):
-    if request.method != "POST":
-        return JsonResponse({"error": "Metoda nepermisa. Folositi POST."}, status=405)
+    if not request.user.is_authenticated:
+        return redirect(login)
     if request.method == "POST":
         data = json.loads(request.body)
         cos_virtual = data.get("cos", "")
@@ -739,3 +840,10 @@ def genereaza_factura(utilizator, comenzi, total_pret):
     c.drawString(100, y - 20, f"Total produse: {len(comenzi)}, Pret final: {total_pret} RON")
     c.save()
     return factura_path
+
+def obtine_permisiuni_meniu(request):
+    return {
+        'is_moderator': request.user.groups.filter(name='Moderatori').exists(),
+        'is_admin_angajat': request.user.groups.filter(name='Administratori_angajati').exists(),
+        'is_authenticated': request.user.is_authenticated,
+    }
