@@ -884,3 +884,5 @@ AttributeError: module 'django.contrib.messages' has no attribute 'critical'
 ERROR 2025-01-07 15:22:47,346 basehttp "POST /aplicatie1/register/ HTTP/1.1" 500 73208
 CRITICAL 2025-01-07 15:25:16,747 views Tentativa de inregistrare cu username-ul 'admin'.
 CRITICAL 2025-01-07 15:27:47,781 views Logari suspecte detectate pentru utilizatorul a de la IP: 127.0.0.1.
+WARNING 2025-01-07 18:48:48,053 log Not Found: /favicon.ico
+WARNING 2025-01-07 18:48:48,054 basehttp "GET /favicon.ico HTTP/1.1" 404 2372

@@ -1414,3 +1414,8 @@ CRITICAL 2025-01-07 15:27:47,781 views Logari suspecte detectate pentru utilizat
 INFO 2025-01-07 15:27:47,789 basehttp "POST /aplicatie1/user_login/ HTTP/1.1" 200 2254
 INFO 2025-01-07 15:31:10,918 autoreload C:\Users\Matei\proiect_django\aplicatie1\views.py changed, reloading.
 INFO 2025-01-07 15:31:11,574 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 18:48:43,838 autoreload Watching for file changes with StatReloader
+INFO 2025-01-07 18:48:47,907 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-01-07 18:48:47,960 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+WARNING 2025-01-07 18:48:48,053 log Not Found: /favicon.ico
+WARNING 2025-01-07 18:48:48,054 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
