@@ -1,7 +1,8 @@
-# Cinema website - Python, Django
+# Cinema web application - Python, Django
 ## Dezvoltarea Aplicatiilor Web - Django (2024-2025)
 
 ## Table of contents
++ [Description](#description)
 + [Requirements](#requirements)   
 + [Setup](#setup)
   + [Downloading files](#downloading-files)
@@ -9,6 +10,10 @@
   + [Creating the database](#creating-the-database)
   + [Populating the database](#populating-the-database)
 + [Diagrams](#diagrams)
+
+
+### Description
+
 
 
 ### Requirements
@@ -28,7 +33,7 @@ After installation check version: `python -m django --version`
 + `cd DAW-2024-proiect`
 #### Creating _.env_
 + `echo "" > .env` 
-+ Open _.env_, then paste these lines, replacing the text between \[ \] with the relevant info. Clicking the link will take you to sections detailing the process:
++ Open _.env_, then paste the following lines, replacing the bracketed text with the relevant info.
 
 > **NOTE**
 > The detailed sections regarding the _secrets_ apply specifically to Gmail accounts.
@@ -55,7 +60,7 @@ EMAIL_HOST_USER and EMAIL_ADMIN do **not** have to be the same address.
   Learn more about app passwords [here](https://support.google.com/accounts/answer/185833).
 
 > **CAUTION**
-> Do not share your _secrets_! Check if the .env file is ignored by .gitignore \(`git status -- .env`\) before pushing to Git.
+> Do not share your _secrets_! Check if _.env_ is ignored by _.gitignore_ \(`git status -- .env`\) before pushing to Git.
 
 #### Creating the database
 + `pip install psycopg2`
@@ -78,8 +83,8 @@ GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA django TO matei;
 + `python manage.py createsuperuser` -> \[your-name\] -> \[your-email\] -> \[your-password\]  
 These are not the same as those in _.env_; these are for a profile at http://127.0.0.1:8000/admin \(page accessible only while the server is running\).
 #### Populating the database
-+ Add PATH Variable your\postgresql\download\location\PostgreSQL\\[your-postgresql-version\]\bin.  
-Example: C:\Program Files\PostgreSQL\17\bin
++ Add PATH Variable _your\postgresql\download\location\PostgreSQL\\[your-postgresql-version\]\bin_.  
+Example: _C:\Program Files\PostgreSQL\17\bin_
 + Run the following commands:
 ```
 psql -h localhost -U matei -d proiect -f "data\cinemauri.sql"  
