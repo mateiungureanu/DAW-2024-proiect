@@ -14,7 +14,7 @@
 
 ### Description
 
-
+Full-stack web application with user authentication, email verification, security checks and warnings, role-based access control, shopping cart, invoice generation and admin dashboard to manage users, groups, offers, and permissions. Data is stored in PostgreSQL, and the app runs on localhost.
 
 ### Requirements
 
