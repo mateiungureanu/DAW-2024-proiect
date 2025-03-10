@@ -1,0 +1,1006 @@
+INFO 2025-03-10 19:10:33,175 autoreload Watching for file changes with StatReloader
+DEBUG 2025-03-10 19:10:33,185 autoreload Waiting for apps ready_event.
+DEBUG 2025-03-10 19:10:33,395 autoreload Apps ready_event triggered. Sending autoreload_started signal.
+DEBUG 2025-03-10 19:10:33,429 autoreload Watching dir C:\Users\Matei\proiect_django\templates_django with glob **/*.
+DEBUG 2025-03-10 19:10:33,429 autoreload Watching dir C:\Users\Matei\proiect_django\locale with glob **/*.mo.
+DEBUG 2025-03-10 19:10:33,430 autoreload Watching dir C:\Users\Matei\proiect_django\aplicatie1\locale with glob **/*.mo.
+DEBUG 2025-03-10 19:10:33,618 utils (0.011) 
+            SELECT
+                c.relname,
+                CASE
+                    WHEN c.relispartition THEN 'p'
+                    WHEN c.relkind IN ('m', 'v') THEN 'v'
+                    ELSE 't'
+                END,
+                obj_description(c.oid, 'pg_class')
+            FROM pg_catalog.pg_class c
+            LEFT JOIN pg_catalog.pg_namespace n ON n.oid = c.relnamespace
+            WHERE c.relkind IN ('f', 'm', 'p', 'r', 'v')
+                AND n.nspname NOT IN ('pg_catalog', 'pg_toast')
+                AND pg_catalog.pg_table_is_visible(c.oid)
+        ; args=None; alias=default
+DEBUG 2025-03-10 19:10:33,628 utils (0.003) SELECT "django_migrations"."id", "django_migrations"."app", "django_migrations"."name", "django_migrations"."applied" FROM "django_migrations"; args=(); alias=default
+DEBUG 2025-03-10 19:10:33,674 autoreload File C:\Python313\Lib\pathlib\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,674 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\generators.py first seen with mtime 1735919545.965712
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Python313\Lib\numbers.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\constants.py first seen with mtime 1735919080.872965
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\psycopg_any.py first seen with mtime 1735919081.864155
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Python313\Lib\difflib.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\client_cursor.py first seen with mtime 1735919545.9623811
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Python313\DLLs\unicodedata.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\pq\_enums.py first seen with mtime 1735919545.9703965
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\engine\statement_splitter.py first seen with mtime 1735919078.8111496
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\models.py first seen with mtime 1735919080.0341358
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Python313\Lib\collections\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\duration.py first seen with mtime 1735919082.069214
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Python313\Lib\asyncio\locks.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,675 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\signing.py first seen with mtime 1735919081.747194
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\decorators.py first seen with mtime 1735919082.0671506
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\adapt.py first seen with mtime 1735919545.9623811
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Python313\Lib\importlib\resources\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Python313\Lib\importlib\resources\_functional.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\i18n.py first seen with mtime 1735919082.0969315
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Python313\Lib\asyncio\futures.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\sql.py first seen with mtime 1735919078.809149
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Python313\Lib\http\cookies.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\signals.py first seen with mtime 1735919081.746186
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Python313\Lib\importlib\resources\_common.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\base.py first seen with mtime 1735919081.8341777
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\lorem_ipsum.py first seen with mtime 1735919082.07942
+DEBUG 2025-03-10 19:10:33,676 autoreload File C:\Python313\Lib\importlib\metadata\_adapters.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_cursor_base.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\comparison.py first seen with mtime 1735919081.9146338
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Python313\Lib\bz2.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sitemaps\apps.py first seen with mtime 1735919081.507698
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\models.py first seen with mtime 1735919081.2867198
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\checks.py first seen with mtime 1735919080.163594
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Python313\Lib\base64.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\related.py first seen with mtime 1735919081.9101405
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\creation.py first seen with mtime 1735919081.8604472
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\dotenv\main.py first seen with mtime 1735919113.9695754
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_helvetica.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\shortcuts.py first seen with mtime 1735919079.382785
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Python313\Lib\ipaddress.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,677 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\__init__.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Python313\Lib\__future__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\asyncio.py first seen with mtime 1735919082.059448
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Python313\Lib\random.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\management\commands\runserver.py first seen with mtime 1735919081.8102255
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\models.py first seen with mtime 1735919079.580456
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\proiect_django\aplicatie1\apps.py first seen with mtime 1727965737.489079
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_adapters_map.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\files.py first seen with mtime 1735919081.9054596
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Python313\Lib\asyncio\base_events.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\formsets.py first seen with mtime 1735919081.9327757
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\apps.py first seen with mtime 1735919081.2845013
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\datetime.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Python313\Lib\copyreg.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,678 autoreload File C:\Python313\Lib\asyncio\protocols.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\api.py first seen with mtime 1735919080.8711889
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\transaction.py first seen with mtime 1735919081.8279932
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_tpc.py first seen with mtime 1735919545.9600737
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_encodings.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_symbol.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Python313\Lib\importlib\metadata\_itertools.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\base.py first seen with mtime 1735919082.0358124
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\filesystem.py first seen with mtime 1735919082.036813
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Python313\Lib\_weakrefset.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\engine.py first seen with mtime 1735919082.023746
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\management\commands\__init__.py first seen with mtime 1735919081.7985518
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_queries.py first seen with mtime 1735919545.959286
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\http\__init__.py first seen with mtime 1735919082.0057242
+DEBUG 2025-03-10 19:10:33,679 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\middleware.py first seen with mtime 1735919081.2867198
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\email\mime\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\composite.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\decorators.py first seen with mtime 1735919079.5782018
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\boundfield.py first seen with mtime 1735919081.9304183
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\cursor.py first seen with mtime 1735919545.9633949
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\wsgiref\handlers.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\email\header.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\utils.py first seen with mtime 1735919078.810152
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\importlib\abc.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\textwrap.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\reprlib.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_capabilities.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Python313\Lib\asyncio\tasks.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\proiect_django\aplicatie1\__init__.py first seen with mtime 1727965737.512079
+DEBUG 2025-03-10 19:10:33,680 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\options.py first seen with mtime 1735919081.8990114
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\engine\grouping.py first seen with mtime 1735919078.8111496
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\__init__.py first seen with mtime 1735919657.036839
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\translation\reloader.py first seen with mtime 1735919082.0894434
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\management\commands\runserver.py first seen with mtime 1735919081.7413232
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\temp.py first seen with mtime 1735919081.772986
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\__init__.py first seen with mtime 1735919081.83021
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_enums.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\__init__.py first seen with mtime 1735919081.8568246
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\forms.py first seen with mtime 1735919080.1648035
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Python313\Lib\email\generator.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Python313\Lib\logging\config.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_helveticaboldoblique.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\rows.py first seen with mtime 1735919545.9667573
+DEBUG 2025-03-10 19:10:33,681 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\timesince.py first seen with mtime 1735919082.0852146
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\asgiref\current_thread_executor.py first seen with mtime 1735919079.2157378
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Python313\Lib\re\_compiler.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader_tags.py first seen with mtime 1735919082.0270243
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\middleware\__init__.py first seen with mtime 1735919082.0103464
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\proiect_django\laborator_django\__init__.py first seen with mtime 1727965603.365265
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_column.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Python313\Lib\ssl.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_py_transformer.py first seen with mtime 1735919545.9586844
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_conninfo_utils.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Python313\Lib\locale.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Python313\Lib\importlib\resources\abc.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\apps.py first seen with mtime 1735919081.7319357
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\json.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\registry.py first seen with mtime 1735919081.761343
+DEBUG 2025-03-10 19:10:33,682 autoreload File C:\Python313\Lib\email\message.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\utils.py first seen with mtime 1735919079.5824552
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Python313\Lib\json\scanner.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\Image.py first seen with mtime 1735919654.5404463
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Python313\Lib\asyncio\trsock.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Python313\Lib\pathlib\_local.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Python313\Lib\re\_constants.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Python313\Lib\importlib\metadata\_meta.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\module_loading.py first seen with mtime 1735919082.0806303
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\tokens.py first seen with mtime 1735919080.035321
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\http\cookie.py first seen with mtime 1735919082.006817
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\translation\trans_real.py first seen with mtime 1735919082.0925343
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\generic\dates.py first seen with mtime 1735919082.1069214
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_typemod.py first seen with mtime 1735919545.9611454
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Python313\Lib\signal.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,683 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\servers\basehttp.py first seen with mtime 1735919081.8257058
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Python313\Lib\wsgiref\simple_server.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Python313\Lib\email\base64mime.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\debug.py first seen with mtime 1735919082.0945847
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_copy_async.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Python313\Lib\inspect.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\decorators.py first seen with mtime 1735919080.0311582
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_struct.py first seen with mtime 1735919545.959286
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\templatetags\__init__.py first seen with mtime 1735919079.8995059
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\__init__.py first seen with mtime 1735919082.0175564
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\actions.py first seen with mtime 1735919079.5772023
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\asgiref\local.py first seen with mtime 1735919079.2157378
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Python313\Lib\urllib\error.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\version.py first seen with mtime 1735919545.968323
+DEBUG 2025-03-10 19:10:33,684 autoreload File C:\Python313\Lib\asyncio\transports.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\tokens.py first seen with mtime 1735919078.81515
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\__init__.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\__init__.py first seen with mtime 1735919654.562739
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_preparing.py first seen with mtime 1735919545.9577491
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\__init__.py first seen with mtime 1735919079.5761993
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\generic\__init__.py first seen with mtime 1735919082.1058216
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\__init__.py first seen with mtime 1735919081.2831435
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\http\response.py first seen with mtime 1735919082.0090783
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\cache\__init__.py first seen with mtime 1735919081.7493637
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Python313\Lib\decimal.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,685 autoreload File C:\Python313\Lib\encodings\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Python313\Lib\email\parser.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_standard.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\proiect_django\aplicatie1\views.py first seen with mtime 1737403533.0636926
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_helveticaoblique.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\context.py first seen with mtime 1735919082.0197475
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\exceptions.py first seen with mtime 1735919082.023746
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Python313\Lib\enum.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\dates.py first seen with mtime 1735919082.0665176
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\formatter.py first seen with mtime 1735919078.8081512
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\boxstuff.py first seen with mtime 1735919657.0383089
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Python313\Lib\urllib\__init__.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_cmodule.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,686 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\templatetags\static.py first seen with mtime 1735919082.0422812
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Python313\Lib\email\_header_value_parser.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\waiting.py first seen with mtime 1735919545.968323
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\dotenv\parser.py first seen with mtime 1735919113.9695754
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\cache\backends\__init__.py first seen with mtime 1735919081.7503653
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\encoding.py first seen with mtime 1735919082.0702248
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\storage\mixins.py first seen with mtime 1735919081.7805383
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\introspection.py first seen with mtime 1735919081.861737
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\transaction.py first seen with mtime 1735919545.9672945
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\__init__.py first seen with mtime 1735919081.9289994
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Python313\Lib\socketserver.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\signals.py first seen with mtime 1735919080.035321
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\utils.py first seen with mtime 1735919082.0561087
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\query.py first seen with mtime 1735919081.9245503
+DEBUG 2025-03-10 19:10:33,687 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\cursor_async.py first seen with mtime 1735919545.9646661
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\signals.py first seen with mtime 1735919081.902449
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\zipfile\__init__.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\importlib\metadata\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\exceptions.py first seen with mtime 1735919078.807033
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\operations.py first seen with mtime 1735919081.8627756
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_courierbold.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\__init__.py first seen with mtime 1735919078.806711
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\email\errors.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\utils.py first seen with mtime 1735919080.8764124
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\manager.py first seen with mtime 1735919081.8980129
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\hmac.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\__init__.py first seen with mtime 1735919657.0484216
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\email\contentmanager.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\_colorize.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,688 autoreload File C:\Python313\Lib\asyncio\mixins.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfgen\canvas.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\lexer.py first seen with mtime 1735919078.8081512
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\formats.py first seen with mtime 1735919082.0712297
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\base.py first seen with mtime 1735919081.8568246
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Python313\Lib\keyword.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\mail\utils.py first seen with mtime 1735919081.7878714
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\forms.py first seen with mtime 1735919081.931636
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaulttags.py first seen with mtime 1735919082.0227342
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Python313\Lib\asyncio\constants.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfgen\textobject.py first seen with mtime 1735919657.0645418
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Python313\Lib\pkgutil.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\utils.py first seen with mtime 1735919081.90346
+DEBUG 2025-03-10 19:10:33,689 autoreload File C:\Python313\Lib\types.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\management\commands\__init__.py first seen with mtime 1735919081.7389116
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Python313\Lib\token.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Python313\Lib\secrets.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\rl_accel.py first seen with mtime 1735919657.0434172
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\json.py first seen with mtime 1735919081.9077122
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_typeinfo.py first seen with mtime 1735919545.9606135
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_connection_base.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\management\__init__.py first seen with mtime 1735919080.2692685
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_timesitalic.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sites\shortcuts.py first seen with mtime 1735919081.5176196
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\_version.py first seen with mtime 1735919654.587842
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\widgets.py first seen with mtime 1735919081.9369035
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\models.py first seen with mtime 1735919080.1648035
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\raw_cursor.py first seen with mtime 1735919545.9667573
+DEBUG 2025-03-10 19:10:33,690 autoreload File C:\Python313\DLLs\_queue.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\storage\__init__.py first seen with mtime 1735919081.7775002
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\pdfdoc.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_courierboldoblique.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\related_lookups.py first seen with mtime 1735919081.9113636
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\base.py first seen with mtime 1735919081.8916168
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Python313\Lib\asyncio\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\others.py first seen with mtime 1735919078.81315
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\__init__.py first seen with mtime 1735919080.1625042
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\dateparse.py first seen with mtime 1735919082.0652845
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Python313\Lib\opcode.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\management\base.py first seen with mtime 1735919081.7949767
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\compatibility\__init__.py first seen with mtime 1735919081.76369
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Python313\Lib\email\iterators.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\templatetags\admin_list.py first seen with mtime 1735919079.8995059
+DEBUG 2025-03-10 19:10:33,691 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\generic\edit.py first seen with mtime 1735919082.1080072
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\datetime.py first seen with mtime 1735919081.9157343
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\templatetags\i18n.py first seen with mtime 1735919082.0399096
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\range.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\__init__.py first seen with mtime 1735919082.0293853
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\numeric.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Python313\Lib\contextvars.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\compatibility\django_4_0.py first seen with mtime 1735919081.76369
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\deletion.py first seen with mtime 1735919081.894452
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_courieroblique.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\management\__init__.py first seen with mtime 1735919081.791806
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_timesroman.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\rl_safe_eval.py first seen with mtime 1735919657.044417
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\pq\misc.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Python313\DLLs\_uuid.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,692 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\views\autocomplete.py first seen with mtime 1735919079.9042199
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\ctypes\_endian.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\re\_parser.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\wsgi.py first seen with mtime 1735919081.7482014
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\conninfo.py first seen with mtime 1735919545.9633949
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\importlib\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\DLLs\_asyncio.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\concurrent\futures\thread.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\gettext.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\ctypes\util.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\__init__.py first seen with mtime 1735919079.3816943
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\asyncio\timeouts.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\operations\models.py first seen with mtime 1735919081.8875275
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\wsgiref\headers.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\Lib\calendar.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Python313\DLLs\_hashlib.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,693 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\net.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_helveticabold.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Python313\Lib\tokenize.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\proiect_django\aplicatie1\sitemaps.py first seen with mtime 1733569320.1078768
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\proiect_django\aplicatie1\admin.py first seen with mtime 1737403488.5977874
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\exceptions.py first seen with mtime 1735919081.874436
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\admin.py first seen with mtime 1735919080.1625042
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\storage\__init__.py first seen with mtime 1735919080.8782394
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\utils.py first seen with mtime 1735919081.8831632
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\connection_async.py first seen with mtime 1735919545.9633949
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Python313\Lib\zoneinfo\__init__.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\_imaging.cp313-win_amd64.pyd first seen with mtime 1735919654.5737393
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Python313\Lib\email\mime\nonmultipart.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Python313\Lib\warnings.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,694 autoreload File C:\Python313\DLLs\_zoneinfo.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Python313\Lib\subprocess.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\servers\__init__.py first seen with mtime 1735919081.8257058
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\enums.py first seen with mtime 1735919081.894452
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\images.py first seen with mtime 1735919081.7709737
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Python313\Lib\asyncio\base_subprocess.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\units.py first seen with mtime 1735919657.0464218
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Python313\Lib\asyncio\threads.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\exceptions.py first seen with mtime 1735919082.054632
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\__init__.py first seen with mtime 1735919080.8711889
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\version.py first seen with mtime 1735919082.0875008
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_pdfdoc.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\ipv6.py first seen with mtime 1735919082.0758266
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\__init__.py first seen with mtime 1735919082.0980353
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\keywords.py first seen with mtime 1735919078.8081512
+DEBUG 2025-03-10 19:10:33,695 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\aligned_indent.py first seen with mtime 1735919078.81215
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\numberformat.py first seen with mtime 1735919082.0806303
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py first seen with mtime 1735919082.018687
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\array.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\templates.py first seen with mtime 1735919081.762491
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\mixins.py first seen with mtime 1735919081.9077122
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\exceptions.py first seen with mtime 1735919079.5792005
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\templatetags\l10n.py first seen with mtime 1735919082.040979
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Python313\Lib\ctypes\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\rltempfile.py first seen with mtime 1735919657.044417
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\security\base.py first seen with mtime 1735919081.7674267
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\apps.py first seen with mtime 1735919080.8711889
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\operations.py first seen with mtime 1735919081.8387437
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\indexes.py first seen with mtime 1735919081.89696
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\apps\registry.py first seen with mtime 1735919079.3838296
+DEBUG 2025-03-10 19:10:33,696 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\choices.py first seen with mtime 1735919082.0620015
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\DLLs\_wmi.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\views\main.py first seen with mtime 1735919079.9042199
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\TiffTags.py first seen with mtime 1735919654.5607388
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\autoreload.py first seen with mtime 1735919082.0175564
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\Lib\zipfile\_path\glob.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\DLLs\_decimal.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\storage\base.py first seen with mtime 1735919081.7778814
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\Lib\re\_casefix.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\utils.py first seen with mtime 1735919081.7763102
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\proiect_django\aplicatie1\urls.py first seen with mtime 1737403515.715324
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\Lib\asyncio\base_tasks.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\Lib\re\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\locks.py first seen with mtime 1735919081.771986
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\apps\__init__.py first seen with mtime 1735919079.382785
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\right_margin.py first seen with mtime 1735919078.81415
+DEBUG 2025-03-10 19:10:33,697 autoreload File C:\Python313\Lib\weakref.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Python313\DLLs\_socket.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\generic\list.py first seen with mtime 1735919082.109186
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\debug.py first seen with mtime 1735919082.1015756
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\caches.py first seen with mtime 1735919081.757975
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Python313\Lib\gzip.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\__init__.py first seen with mtime 1735919081.9044626
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\validators.py first seen with mtime 1735919081.7482014
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\views\__init__.py first seen with mtime 1735919079.9042199
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\abc.py first seen with mtime 1735919545.9611454
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\templatetags\cache.py first seen with mtime 1735919082.0399096
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\schema.py first seen with mtime 1735919081.864155
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\models.py first seen with mtime 1735919081.934705
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\output.py first seen with mtime 1735919078.81315
+DEBUG 2025-03-10 19:10:33,698 autoreload File C:\Python313\Lib\asyncio\log.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\_compat_pickle.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\importlib\_abc.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\asyncio\queues.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\schema.py first seen with mtime 1735919081.8387437
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\asyncio\selector_events.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\json\encoder.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\pickle.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Python313\Lib\copy.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\filters.py first seen with mtime 1735919079.5792005
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sites\requests.py first seen with mtime 1735919081.5165527
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\expressions.py first seen with mtime 1735919081.895601
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\library.py first seen with mtime 1735919082.0248463
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\subqueries.py first seen with mtime 1735919081.9245503
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_connection_info.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\conf\global_settings.py first seen with mtime 1735919079.3848512
+DEBUG 2025-03-10 19:10:33,699 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\mixins.py first seen with mtime 1735919081.9172587
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\__init__.py first seen with mtime 1735919082.0348146
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\_os.py first seen with mtime 1735919082.0571177
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Python313\Lib\email\_parseaddr.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Python313\Lib\email\mime\message.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\templatetags\tz.py first seen with mtime 1735919082.0422812
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Python313\Lib\pprint.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\migration.py first seen with mtime 1735919081.8780262
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\dbapi20.py first seen with mtime 1735919545.9646661
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Python313\Lib\socket.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\__init__.py first seen with mtime 1735919081.9135172
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\logger.py first seen with mtime 1735919657.0414174
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\utils.py first seen with mtime 1735919657.0474212
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Python313\Lib\encodings\cp1252.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\generic\detail.py first seen with mtime 1735919082.1080072
+DEBUG 2025-03-10 19:10:33,700 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py first seen with mtime 1735919081.7836413
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Python313\Lib\asyncio\windows_utils.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\http\multipartparser.py first seen with mtime 1735919082.0079296
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\__init__.py first seen with mtime 1735919081.8892238
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_symbol.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\operations\base.py first seen with mtime 1735919081.8864672
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\cache.py first seen with mtime 1735919082.0993707
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Python313\Lib\html\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\timezone.py first seen with mtime 1735919082.0852146
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\apps.py first seen with mtime 1735919080.02916
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\pq\pq_ctypes.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\fields.py first seen with mtime 1735919080.163594
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Python313\Lib\json\decoder.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,701 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_conninfo_attempts.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\pq\abc.py first seen with mtime 1735919545.9719384
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\copy.py first seen with mtime 1735919545.9633949
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Python313\Lib\getpass.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\pq\_pq_ctypes.py first seen with mtime 1735919545.9703965
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\__init__.py first seen with mtime 1735919079.5761993
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfgen\__init__.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_conninfo_attempts_async.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Python313\Lib\urllib\parse.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_copy_base.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_timesbolditalic.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\generated.py first seen with mtime 1735919081.9064603
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\autoreload.py first seen with mtime 1735919082.059448
+DEBUG 2025-03-10 19:10:33,702 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\conf\locale\__init__.py first seen with mtime 1735919079.387214
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\window.py first seen with mtime 1735919081.9182844
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\none.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\utils.py first seen with mtime 1735919082.0293853
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\model_checks.py first seen with mtime 1735919081.761343
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\translation.py first seen with mtime 1735919081.762491
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\asgi.py first seen with mtime 1735919081.7825398
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\asgiref\sync.py first seen with mtime 1735919079.2177248
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\__init__.py first seen with mtime 1735919082.0571177
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\management\__init__.py first seen with mtime 1735919081.7389116
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\django.py first seen with mtime 1735919082.030485
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Python313\Lib\http\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\exceptions.py first seen with mtime 1735919081.7450774
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\rl_codecs.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,703 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_acompat.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Python313\Lib\wsgiref\util.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\forms.py first seen with mtime 1735919080.033065
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\wsgi.py first seen with mtime 1735919081.7848225
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Python313\Lib\asyncio\sslproto.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Python313\Lib\asyncio\runners.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\middleware\cache.py first seen with mtime 1735919082.0103464
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\__init__.py first seen with mtime 1735919081.7565763
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\sites.py first seen with mtime 1735919079.5814557
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Python313\Lib\email\_encoded_words.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Python313\Lib\email\mime\multipart.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\admin.py first seen with mtime 1735919080.0280952
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\__init__.py first seen with mtime 1735919081.8733752
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\storage\filesystem.py first seen with mtime 1735919081.7784553
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\base_user.py first seen with mtime 1735919080.0301583
+DEBUG 2025-03-10 19:10:33,704 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sites\__init__.py first seen with mtime 1735919081.5115583
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\serializers\json.py first seen with mtime 1735919081.8207858
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\connection.py first seen with mtime 1735919545.9623811
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Python313\Lib\shutil.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\base.py first seen with mtime 1735919081.7697606
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\log.py first seen with mtime 1735919082.0782838
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Python313\Lib\zipfile\_path\__init__.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\checks.py first seen with mtime 1735919080.0301583
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Python313\Lib\quopri.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Python313\Lib\importlib\metadata\_text.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Python313\Lib\selectors.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\database.py first seen with mtime 1735919081.757975
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\proiect_django\aplicatie1\models.py first seen with mtime 1737403507.2104304
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\apps.py first seen with mtime 1735919080.1625042
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\numpy.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,705 autoreload File C:\Python313\Lib\_compression.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\generic\base.py first seen with mtime 1735919082.1058216
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Python313\Lib\encodings\utf_8.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Python313\Lib\http\client.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\datastructures.py first seen with mtime 1735919081.9224508
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\cli.py first seen with mtime 1735919078.807033
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sitemaps\__init__.py first seen with mtime 1735919081.507698
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\templatetags\admin_urls.py first seen with mtime 1735919079.8995059
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\mail\message.py first seen with mtime 1735919081.7868347
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Python313\Lib\email\utils.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Python313\Lib\traceback.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\app_directories.py first seen with mtime 1735919082.0348146
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py first seen with mtime 1735919081.7836413
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\operations\__init__.py first seen with mtime 1735919081.8854163
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Python313\Lib\email\feedparser.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,706 autoreload File C:\Python313\Lib\urllib\request.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\utils.py first seen with mtime 1735919081.829
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\defaultfilters.py first seen with mtime 1735919082.0212262
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\finders.py first seen with mtime 1735919081.7335677
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\apps\config.py first seen with mtime 1735919079.3838296
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Python313\Lib\email\headerregistry.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Python313\Lib\mimetypes.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\__init__.py first seen with mtime 1735919081.826982
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\_binary.py first seen with mtime 1735919654.5637386
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\reindent.py first seen with mtime 1735919078.81315
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Python313\Lib\bisect.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Python313\Lib\pathlib\_abc.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\csrf.py first seen with mtime 1735919082.1015756
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\handlers.py first seen with mtime 1735919081.7342145
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\postgres.py first seen with mtime 1735919545.965712
+DEBUG 2025-03-10 19:10:33,707 autoreload File C:\Python313\Lib\concurrent\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Python313\DLLs\_lzma.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\views.py first seen with mtime 1735919080.0364618
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Python313\Lib\nturl2path.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\paginator.py first seen with mtime 1735919081.746186
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Python313\Lib\html\parser.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Python313\Lib\fnmatch.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\hashable.py first seen with mtime 1735919082.0733986
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\ImageMode.py first seen with mtime 1735919654.5454466
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_wrappers.py first seen with mtime 1735919545.9611454
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\move.py first seen with mtime 1735919081.772986
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\tokens.py first seen with mtime 1735919078.809149
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\cache\backends\base.py first seen with mtime 1735919081.7513652
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\_deprecate.py first seen with mtime 1735919654.5637386
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\termcolors.py first seen with mtime 1735919082.082797
+DEBUG 2025-03-10 19:10:33,708 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\views.py first seen with mtime 1735919080.1660628
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\messages.py first seen with mtime 1735919081.7592077
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\engine\__init__.py first seen with mtime 1735919078.810152
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\storage\base.py first seen with mtime 1735919080.8782394
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\__init__.py first seen with mtime 1735919081.8327503
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\bool.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\safestring.py first seen with mtime 1735919082.082797
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\server_cursor.py first seen with mtime 1735919545.9672945
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\utils.py first seen with mtime 1735919081.8314095
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\datastructures.py first seen with mtime 1735919082.0642438
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\features.py first seen with mtime 1735919081.8341777
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\ddl_references.py first seen with mtime 1735919081.83021
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\serializers\base.py first seen with mtime 1735919081.8207858
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Python313\Lib\linecache.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Python313\Lib\lzma.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,709 autoreload File C:\Python313\Lib\argparse.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\async_checks.py first seen with mtime 1735919081.7565763
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Python313\Lib\email\encoders.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\string.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\backends\base.py first seen with mtime 1735919082.030485
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Python313\Lib\encodings\aliases.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\deprecation.py first seen with mtime 1735919082.0682137
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_courier.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Python313\Lib\ctypes\wintypes.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\text.py first seen with mtime 1735919081.9182844
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\translation\__init__.py first seen with mtime 1735919082.0894434
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_zapfdingbats.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Python313\Lib\concurrent\futures\_base.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\middleware\csrf.py first seen with mtime 1735919082.0128977
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\decorators\common.py first seen with mtime 1735919082.1004536
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Python313\Lib\email\_policybase.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,710 autoreload File C:\Python313\Lib\hashlib.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\tempfile.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\datetime.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\_opcode_metadata.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\importlib\metadata\_functools.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\asyncio\base_futures.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\apps.py first seen with mtime 1735919079.5772023
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\client.py first seen with mtime 1735919081.8568246
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\DLLs\_ctypes.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\asyncio\events.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\fields.py first seen with mtime 1735919081.931636
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\asyncio\windows_events.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Python313\Lib\asyncio\exceptions.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\dotenv\variables.py first seen with mtime 1735919113.9695754
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_widths_timesbold.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,711 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\ExifTags.py first seen with mtime 1735919654.533743
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\management\__init__.py first seen with mtime 1735919080.1537373
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\serializers\__init__.py first seen with mtime 1735919081.8195753
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Python313\Lib\asyncio\format_helpers.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\html.py first seen with mtime 1735919082.0733986
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\proiect_django\manage.py first seen with mtime 1733082821.7352722
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\operations\fields.py first seen with mtime 1735919081.8864672
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\security\__init__.py first seen with mtime 1735919081.7659173
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Python313\Lib\concurrent\futures\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Python313\Lib\typing.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Python313\Lib\asyncio\subprocess.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\templatetags\base.py first seen with mtime 1735919079.8995059
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\cache\utils.py first seen with mtime 1735919081.7503653
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\rl_config.py first seen with mtime 1735919656.9922733
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Python313\Lib\glob.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,712 autoreload File C:\Python313\Lib\email\mime\text.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\tree.py first seen with mtime 1735919082.0863502
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\templatetags\log.py first seen with mtime 1735919079.9042199
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\base_session.py first seen with mtime 1735919081.2845013
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\related_descriptors.py first seen with mtime 1735919081.9113636
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\proiect_django\laborator_django\settings.py first seen with mtime 1734254514.5440733
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Python313\Lib\platform.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Python313\Lib\email\charset.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Python313\Lib\dis.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\pdfutils.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\backends.py first seen with mtime 1735919080.02916
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Python313\Lib\wsgiref\__init__.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\hashers.py first seen with mtime 1735919080.033065
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\middleware.py first seen with mtime 1735919080.033065
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\utils.py first seen with mtime 1735919081.7365131
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Python313\Lib\logging\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,713 autoreload File C:\Python313\Lib\graphlib.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\connection.py first seen with mtime 1735919082.0620015
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\constants.py first seen with mtime 1735919081.9215438
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Python313\Lib\threading.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\converters.py first seen with mtime 1735919082.0535548
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Python313\Lib\_markupbase.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Python313\Lib\dataclasses.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\reverse_related.py first seen with mtime 1735919081.9124906
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Python313\Lib\email\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\checks.py first seen with mtime 1735919081.7319357
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_transformer.py first seen with mtime 1735919545.9600737
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Python313\Lib\uuid.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\creation.py first seen with mtime 1735919081.8341777
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\middleware\security.py first seen with mtime 1735919082.0164976
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Python313\Lib\email\policy.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,714 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_pipeline.py first seen with mtime 1735919545.9577491
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\options.py first seen with mtime 1735919079.5814557
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\enum.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Python313\Lib\struct.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\regex_helper.py first seen with mtime 1735919082.0817564
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\text.py first seen with mtime 1735919082.083916
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\checks.py first seen with mtime 1735919079.5782018
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Python313\DLLs\_ssl.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Python313\DLLs\_bz2.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\security\csrf.py first seen with mtime 1735919081.7674267
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\postgresql\features.py first seen with mtime 1735919081.861737
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\proiect_django\laborator_django\urls.py first seen with mtime 1727966776.2917762
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sitemaps\views.py first seen with mtime 1735919081.5087392
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\filters\__init__.py first seen with mtime 1735919078.81215
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\operations\special.py first seen with mtime 1735919081.888808
+DEBUG 2025-03-10 19:10:33,715 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\crypto.py first seen with mtime 1735919082.0630553
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\introspection.py first seen with mtime 1735919081.8341777
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\sysconfig\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\queue.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\validation.py first seen with mtime 1735919081.8387437
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\functional.py first seen with mtime 1735919082.0722246
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\heapq.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\http\server.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\fields\proxy.py first seen with mtime 1735919081.9088192
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\dotenv\__init__.py first seen with mtime 1735919113.9695754
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\asyncio\streams.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\_typing.py first seen with mtime 1735919654.587842
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\__init__.py first seen with mtime 1735919081.7697606
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\email\quoprimime.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Python313\Lib\importlib\metadata\_collections.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,716 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\multirange.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\types\uuid.py first seen with mtime 1735919545.972448
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\__init__.py first seen with mtime 1735919081.919391
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\validators.py first seen with mtime 1735919080.0364618
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\constraints.py first seen with mtime 1735919081.893004
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\http.py first seen with mtime 1735919082.0745194
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Python313\DLLs\select.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\pdfmetrics.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\pq\__init__.py first seen with mtime 1735919545.9703965
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\templatetags\admin_modify.py first seen with mtime 1735919079.8995059
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_macroman.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_macexpert.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,717 autoreload File C:\Users\Matei\proiect_django\aplicatie1\forms.py first seen with mtime 1737403499.970304
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Python313\Lib\html\entities.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_compat.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Python313\Lib\urllib\response.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Python313\Lib\operator.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Python313\Lib\asyncio\staggered.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\__init__.py first seen with mtime 1735919080.0280952
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Python313\Lib\string.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\files.py first seen with mtime 1735919081.7592077
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Python313\Lib\asyncio\coroutines.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\constants.py first seen with mtime 1735919081.8916168
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\functions\math.py first seen with mtime 1735919081.9157343
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_tz.py first seen with mtime 1735919545.9611454
+DEBUG 2025-03-10 19:10:33,718 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\templatetags\__init__.py first seen with mtime 1735919082.03889
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_winansi.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Python313\Lib\asyncio\proactor_events.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\renderers.py first seen with mtime 1735919081.934705
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfbase\_fontdata_enc_zapfdingbats.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\serializers\python.py first seen with mtime 1735919081.823275
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\conf\__init__.py first seen with mtime 1735919079.3838296
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfgen\pdfgeom.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\urls.py first seen with mtime 1735919081.76369
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\dateformat.py first seen with mtime 1735919082.0642438
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\helpers.py first seen with mtime 1735919079.580456
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Python313\Lib\email\mime\base.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Python313\Lib\logging\handlers.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_oids.py first seen with mtime 1735919545.9577491
+DEBUG 2025-03-10 19:10:33,719 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\__init__.py first seen with mtime 1735919081.7815397
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\forms\utils.py first seen with mtime 1735919081.9359035
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\widgets.py first seen with mtime 1735919079.5834546
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Python313\Lib\zoneinfo\_tzpath.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\PIL\_util.py first seen with mtime 1735919654.587842
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Python313\Lib\asyncio\taskgroups.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\conf.py first seen with mtime 1735919082.052424
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\pdfgen\pathobject.py first seen with mtime 1735919657.0494225
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\signals.py first seen with mtime 1735919081.8314095
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\errors.py first seen with mtime 1735919545.9646661
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\password_validation.py first seen with mtime 1735919080.0341358
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\asgiref\__init__.py first seen with mtime 1735919079.2147386
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\storage\handler.py first seen with mtime 1735919081.779539
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\response.py first seen with mtime 1735919082.0270243
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Python313\Lib\functools.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,720 autoreload File C:\Python313\Lib\zoneinfo\_common.py first seen with mtime 1733252250.0
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\query.py first seen with mtime 1735919081.9003882
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\http\request.py first seen with mtime 1735919082.0079296
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\uploadedfile.py first seen with mtime 1735919081.7739854
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\cache.py first seen with mtime 1735919082.0605805
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\views.py first seen with mtime 1735919081.7376177
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\smartif.py first seen with mtime 1735919082.02815
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\sqlparse\engine\filter_stack.py first seen with mtime 1735919078.8111496
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\uploadhandler.py first seen with mtime 1735919081.77515
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\deconstruct.py first seen with mtime 1735919082.0671506
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\utils\inspect.py first seen with mtime 1735919082.0758266
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\dispatch\__init__.py first seen with mtime 1735919081.9268422
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\dispatch\dispatcher.py first seen with mtime 1735919081.9278638
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loader.py first seen with mtime 1735919082.0259216
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\colors.py first seen with mtime 1735919657.0383089
+DEBUG 2025-03-10 19:10:33,721 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\static.py first seen with mtime 1735919082.0969315
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\__init__.py first seen with mtime 1735919081.7444634
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\sql.py first seen with mtime 1735919545.9672945
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\where.py first seen with mtime 1735919081.9255521
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\rl_settings.py first seen with mtime 1735919656.9922733
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Python313\Lib\ast.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\checks\security\sessions.py first seen with mtime 1735919081.768456
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\base.py first seen with mtime 1735919082.052424
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\__init__.py first seen with mtime 1735919656.9922733
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\loaders\cached.py first seen with mtime 1735919082.036813
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\mail\__init__.py first seen with mtime 1735919081.7858346
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\resolvers.py first seen with mtime 1735919082.0557907
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\psycopg\_copy.py first seen with mtime 1735919545.950178
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\__init__.py first seen with mtime 1735919081.7307189
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\cache\backends\filebased.py first seen with mtime 1735919081.754366
+DEBUG 2025-03-10 19:10:33,722 autoreload File C:\Python313\DLLs\_overlapped.pyd first seen with mtime 1733252292.0
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\state.py first seen with mtime 1735919081.8831632
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\management\color.py first seen with mtime 1735919081.7961626
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\reportlab\lib\pagesizes.py first seen with mtime 1735919657.0424173
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\files\storage\memory.py first seen with mtime 1735919081.779539
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Python313\Lib\contextlib.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\__init__.py first seen with mtime 1735919082.093534
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Python313\Lib\json\__init__.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\__init__.py first seen with mtime 1735919082.0513356
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\aggregates.py first seen with mtime 1735919081.8902445
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\query_utils.py first seen with mtime 1735919081.901399
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\backends\base\client.py first seen with mtime 1735919081.8341777
+DEBUG 2025-03-10 19:10:33,723 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\lookups.py first seen with mtime 1735919081.8980129
+DEBUG 2025-03-10 19:10:33,724 autoreload File C:\Users\Matei\proiect_django\templates_django\403.html first seen with mtime 1736240934.4897192
+DEBUG 2025-03-10 19:10:33,724 autoreload File C:\Users\Matei\proiect_django\templates_django\angajat_detail.html first seen with mtime 1736240929.8501506
+DEBUG 2025-03-10 19:10:33,724 autoreload File C:\Users\Matei\proiect_django\templates_django\change_password.html first seen with mtime 1736240914.658814
+DEBUG 2025-03-10 19:10:33,725 autoreload File C:\Users\Matei\proiect_django\templates_django\cinema_detail.html first seen with mtime 1736240903.8483293
+DEBUG 2025-03-10 19:10:33,725 autoreload File C:\Users\Matei\proiect_django\templates_django\contact.html first seen with mtime 1736240626.6957684
+DEBUG 2025-03-10 19:10:33,726 autoreload File C:\Users\Matei\proiect_django\templates_django\cos_virtual.html first seen with mtime 1736251598.8665113
+DEBUG 2025-03-10 19:10:33,726 autoreload File C:\Users\Matei\proiect_django\templates_django\creare_angajati.html first seen with mtime 1736240898.819034
+DEBUG 2025-03-10 19:10:33,726 autoreload File C:\Users\Matei\proiect_django\templates_django\email_confirmation.html first seen with mtime 1736246285.2975557
+DEBUG 2025-03-10 19:10:33,726 autoreload File C:\Users\Matei\proiect_django\templates_django\email_confirmed.html first seen with mtime 1736240864.0940068
+DEBUG 2025-03-10 19:10:33,727 autoreload File C:\Users\Matei\proiect_django\templates_django\email_promo.html first seen with mtime 1733082821.7362852
+DEBUG 2025-03-10 19:10:33,727 autoreload File C:\Users\Matei\proiect_django\templates_django\email_promo_electronice.html first seen with mtime 1733082821.7362852
+DEBUG 2025-03-10 19:10:33,727 autoreload File C:\Users\Matei\proiect_django\templates_django\email_promo_haine.html first seen with mtime 1733082821.7362852
+DEBUG 2025-03-10 19:10:33,728 autoreload File C:\Users\Matei\proiect_django\templates_django\filme_filtrare.html first seen with mtime 1736240842.443264
+DEBUG 2025-03-10 19:10:33,728 autoreload File C:\Users\Matei\proiect_django\templates_django\film_detail.html first seen with mtime 1736240847.0096402
+DEBUG 2025-03-10 19:10:33,728 autoreload File C:\Users\Matei\proiect_django\templates_django\lista_angajati.html first seen with mtime 1736243860.6581612
+DEBUG 2025-03-10 19:10:33,729 autoreload File C:\Users\Matei\proiect_django\templates_django\lista_cinemauri.html first seen with mtime 1736240829.6400194
+DEBUG 2025-03-10 19:10:33,729 autoreload File C:\Users\Matei\proiect_django\templates_django\lista_filme.html first seen with mtime 1736240825.3439643
+DEBUG 2025-03-10 19:10:33,729 autoreload File C:\Users\Matei\proiect_django\templates_django\lista_produse.html first seen with mtime 1736240724.520332
+DEBUG 2025-03-10 19:10:33,730 autoreload File C:\Users\Matei\proiect_django\templates_django\lista_utilizatori.html first seen with mtime 1736240810.1197605
+DEBUG 2025-03-10 19:10:33,730 autoreload File C:\Users\Matei\proiect_django\templates_django\login.html first seen with mtime 1736240704.6695273
+DEBUG 2025-03-10 19:10:33,730 autoreload File C:\Users\Matei\proiect_django\templates_django\meniu.html first seen with mtime 1736243936.1204143
+DEBUG 2025-03-10 19:10:33,730 autoreload File C:\Users\Matei\proiect_django\templates_django\produs_detail.html first seen with mtime 1736240764.9034777
+DEBUG 2025-03-10 19:10:33,730 autoreload File C:\Users\Matei\proiect_django\templates_django\profile.html first seen with mtime 1736240740.6235156
+DEBUG 2025-03-10 19:10:33,731 autoreload File C:\Users\Matei\proiect_django\templates_django\promotii.html first seen with mtime 1736240789.8476663
+DEBUG 2025-03-10 19:10:33,731 autoreload File C:\Users\Matei\proiect_django\templates_django\register.html first seen with mtime 1736240746.6184983
+DEBUG 2025-03-10 19:10:33,731 autoreload File C:\Users\Matei\proiect_django\templates_django\utilizator_detail.html first seen with mtime 1736240798.3020866
+DEBUG 2025-03-10 19:10:34,897 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\__init__.py first seen with mtime 1735919080.1603389
+DEBUG 2025-03-10 19:10:34,897 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0008_alter_user_username_max_length.py first seen with mtime 1735919080.159275
+DEBUG 2025-03-10 19:10:34,898 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\models\sql\compiler.py first seen with mtime 1735919081.9205334
+DEBUG 2025-03-10 19:10:34,898 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0008_produse_stoc.py first seen with mtime 1734087260.7203596
+DEBUG 2025-03-10 19:10:34,899 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0011_alter_materie_profesor.py first seen with mtime 1736408444.8161056
+DEBUG 2025-03-10 19:10:34,899 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\migrations\0001_initial.py first seen with mtime 1735919079.8178246
+DEBUG 2025-03-10 19:10:34,900 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\migrations\0002_logentry_remove_auto_add.py first seen with mtime 1735919079.8178246
+DEBUG 2025-03-10 19:10:34,900 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0012_alter_materie_durata_ore.py first seen with mtime 1736408726.8612497
+DEBUG 2025-03-10 19:10:34,900 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\__init__.py first seen with mtime 1727965737.5130792
+DEBUG 2025-03-10 19:10:34,900 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\conf\urls\__init__.py first seen with mtime 1735919079.5736387
+DEBUG 2025-03-10 19:10:34,900 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0003_alter_user_email_max_length.py first seen with mtime 1735919080.157262
+DEBUG 2025-03-10 19:10:34,900 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0006_require_contenttypes_0002.py first seen with mtime 1735919080.157262
+DEBUG 2025-03-10 19:10:34,901 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0006_customuser_blocat.py first seen with mtime 1734015251.303185
+DEBUG 2025-03-10 19:10:34,901 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\middleware\common.py first seen with mtime 1735919082.0128977
+DEBUG 2025-03-10 19:10:34,901 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\cache\backends\locmem.py first seen with mtime 1735919081.754366
+DEBUG 2025-03-10 19:10:34,901 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\migrations\__init__.py first seen with mtime 1735919080.271316
+DEBUG 2025-03-10 19:10:34,901 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\backends\db.py first seen with mtime 1735919081.291564
+DEBUG 2025-03-10 19:10:34,902 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0002_customuser_cod_customuser_email_confirmat.py first seen with mtime 1732964227.4504917
+DEBUG 2025-03-10 19:10:34,902 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0005_alter_user_last_login_null.py first seen with mtime 1735919080.157262
+DEBUG 2025-03-10 19:10:34,902 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0005_alter_customuser_options.py first seen with mtime 1733473191.618794
+DEBUG 2025-03-10 19:10:34,902 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\migrations\0003_logentry_add_action_flag_choices.py first seen with mtime 1735919079.8188224
+DEBUG 2025-03-10 19:10:34,903 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0011_update_proxy_permissions.py first seen with mtime 1735919080.1603389
+DEBUG 2025-03-10 19:10:34,903 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\migrations\0001_initial.py first seen with mtime 1735919081.505876
+DEBUG 2025-03-10 19:10:34,903 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\middleware.py first seen with mtime 1735919080.875268
+DEBUG 2025-03-10 19:10:34,903 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\csrf.py first seen with mtime 1735919082.0945847
+DEBUG 2025-03-10 19:10:34,903 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\exceptions.py first seen with mtime 1735919081.2855904
+DEBUG 2025-03-10 19:10:34,904 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\migrations\0002_remove_content_type_name.py first seen with mtime 1735919080.271316
+DEBUG 2025-03-10 19:10:34,904 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0004_alter_user_username_opts.py first seen with mtime 1735919080.157262
+DEBUG 2025-03-10 19:10:34,904 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0003_customuser_nume_customuser_prenume.py first seen with mtime 1732970336.3427782
+DEBUG 2025-03-10 19:10:34,905 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\backends\base.py first seen with mtime 1735919081.2891073
+DEBUG 2025-03-10 19:10:34,905 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0012_alter_user_first_name_max_length.py first seen with mtime 1735919080.1603389
+DEBUG 2025-03-10 19:10:34,905 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\middleware\clickjacking.py first seen with mtime 1735919082.0115006
+DEBUG 2025-03-10 19:10:34,906 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0007_alter_validators_add_error_messages.py first seen with mtime 1735919080.157262
+DEBUG 2025-03-10 19:10:34,906 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0004_categorii_produse_promotii_vizualizari.py first seen with mtime 1733082821.730826
+DEBUG 2025-03-10 19:10:34,907 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\executor.py first seen with mtime 1735919081.8757322
+DEBUG 2025-03-10 19:10:34,907 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0010_profesor_materie.py first seen with mtime 1736406307.4344165
+DEBUG 2025-03-10 19:10:34,907 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0009_comanda.py first seen with mtime 1734524620.408969
+DEBUG 2025-03-10 19:10:34,907 autoreload File C:\Python313\Lib\encodings\idna.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:34,907 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0009_alter_user_last_name_max_length.py first seen with mtime 1735919080.159275
+DEBUG 2025-03-10 19:10:34,908 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\migrations\__init__.py first seen with mtime 1735919079.8188224
+DEBUG 2025-03-10 19:10:34,908 autoreload File C:\Python313\Lib\stringprep.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:34,908 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\loader.py first seen with mtime 1735919081.8780262
+DEBUG 2025-03-10 19:10:34,908 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0007_alter_customuser_options.py first seen with mtime 1734015408.3657153
+DEBUG 2025-03-10 19:10:34,908 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0001_initial.py first seen with mtime 1735919080.1537373
+DEBUG 2025-03-10 19:10:34,909 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0010_alter_group_name_max_length.py first seen with mtime 1735919080.159275
+DEBUG 2025-03-10 19:10:34,909 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\backends\__init__.py first seen with mtime 1735919081.2891073
+DEBUG 2025-03-10 19:10:34,909 autoreload File C:\Users\Matei\proiect_django\aplicatie1\migrations\0001_initial.py first seen with mtime 1732712445.523656
+DEBUG 2025-03-10 19:10:34,910 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\graph.py first seen with mtime 1735919081.8767865
+DEBUG 2025-03-10 19:10:34,910 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\migrations\0002_alter_permission_name_max_length.py first seen with mtime 1735919080.1537373
+DEBUG 2025-03-10 19:10:34,910 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\views\defaults.py first seen with mtime 1735919082.0956771
+DEBUG 2025-03-10 19:10:34,910 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\db\migrations\recorder.py first seen with mtime 1735919081.8805954
+DEBUG 2025-03-10 19:10:34,910 autoreload File C:\Users\Matei\proiect_django\laborator_django\wsgi.py first seen with mtime 1727965603.364271
+DEBUG 2025-03-10 19:10:34,910 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\migrations\__init__.py first seen with mtime 1735919081.505876
+DEBUG 2025-03-10 19:10:34,911 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\contenttypes\migrations\0001_initial.py first seen with mtime 1735919080.271316
+INFO 2025-03-10 19:10:53,868 basehttp "GET /admin/ HTTP/1.1" 302 0
+INFO 2025-03-10 19:10:54,046 basehttp "GET /admin/login/?next=/admin/ HTTP/1.1" 200 4158
+INFO 2025-03-10 19:10:54,436 basehttp "GET /static/admin/css/dark_mode.css HTTP/1.1" 200 2804
+INFO 2025-03-10 19:10:54,447 basehttp "GET /static/admin/css/login.css HTTP/1.1" 200 951
+INFO 2025-03-10 19:10:54,447 basehttp "GET /static/admin/css/nav_sidebar.css HTTP/1.1" 200 2810
+INFO 2025-03-10 19:10:54,450 basehttp "GET /static/admin/css/base.css HTTP/1.1" 200 22092
+INFO 2025-03-10 19:10:54,450 basehttp "GET /static/admin/css/responsive.css HTTP/1.1" 200 17972
+INFO 2025-03-10 19:10:54,466 basehttp "GET /static/admin/js/theme.js HTTP/1.1" 200 1653
+INFO 2025-03-10 19:10:54,484 basehttp "GET /static/admin/js/nav_sidebar.js HTTP/1.1" 200 3063
+DEBUG 2025-03-10 19:10:54,533 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'aplicatie1.urls' from 'C:\\Users\\Matei\\proiect_django\\aplicatie1\\urls.py'> (None:None) 'aplicatie1/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <URLPattern list> (admin:admin) 'admin/'>
+DEBUG 2025-03-10 19:10:54,546 autoreload File C:\Python313\Lib\importlib\resources\_adapters.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:54,566 base Exception while resolving variable 'name' in template 'unknown'.
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    callback, callback_args, callback_kwargs = self.resolve_request(request)
+                                               ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\core\handlers\base.py", line 313, in resolve_request
+    resolver_match = resolver.resolve(request.path_info)
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\urls\resolvers.py", line 705, in resolve
+    raise Resolver404({"tried": tried, "path": new_path})
+django.urls.exceptions.Resolver404: {'tried': [[<URLResolver <URLPattern list> (admin:admin) 'admin/'>], [<URLResolver <module 'aplicatie1.urls' from 'C:\\Users\\Matei\\proiect_django\\aplicatie1\\urls.py'> (None:None) 'aplicatie1/'>]], 'path': 'favicon.ico'}
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 883, in _resolve_lookup
+    current = current[bit]
+              ~~~~~~~^^^^^
+TypeError: 'URLResolver' object is not subscriptable
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 893, in _resolve_lookup
+    current = getattr(current, bit)
+AttributeError: 'URLResolver' object has no attribute 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 899, in _resolve_lookup
+    current = current[int(bit)]
+                      ~~~^^^^^
+ValueError: invalid literal for int() with base 10: 'name'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\base.py", line 906, in _resolve_lookup
+    raise VariableDoesNotExist(
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+    )  # missing attribute
+    ^
+django.template.base.VariableDoesNotExist: Failed lookup for key [name] in <URLResolver <module 'aplicatie1.urls' from 'C:\\Users\\Matei\\proiect_django\\aplicatie1\\urls.py'> (None:None) 'aplicatie1/'>
+WARNING 2025-03-10 19:10:54,570 log Not Found: /favicon.ico
+WARNING 2025-03-10 19:10:54,571 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+DEBUG 2025-03-10 19:10:54,573 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\storage\session.py first seen with mtime 1735919080.8812401
+DEBUG 2025-03-10 19:10:54,573 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\conf\locale\en\__init__.py first seen with mtime 1735919079.4187498
+DEBUG 2025-03-10 19:10:54,576 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\template\context_processors.py first seen with mtime 1735919082.0212262
+DEBUG 2025-03-10 19:10:54,576 autoreload File C:\Python313\Lib\importlib\resources\readers.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:54,577 autoreload File C:\Python313\Lib\importlib\readers.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:54,577 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\storage\cookie.py first seen with mtime 1735919080.879239
+DEBUG 2025-03-10 19:10:54,578 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\messages\context_processors.py first seen with mtime 1735919080.872965
+DEBUG 2025-03-10 19:10:54,579 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\staticfiles\storage.py first seen with mtime 1735919081.7342145
+DEBUG 2025-03-10 19:10:54,580 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\admin\forms.py first seen with mtime 1735919079.5792005
+DEBUG 2025-03-10 19:10:54,580 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\conf\locale\en\formats.py first seen with mtime 1735919079.419051
+DEBUG 2025-03-10 19:10:54,581 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\tzdata\__init__.py first seen with mtime 1735919078.5218072
+DEBUG 2025-03-10 19:10:54,581 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\auth\context_processors.py first seen with mtime 1735919080.0311582
+DEBUG 2025-03-10 19:10:54,582 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\django\contrib\sessions\serializers.py first seen with mtime 1735919081.287771
+DEBUG 2025-03-10 19:10:54,585 autoreload File C:\Python313\Lib\importlib\resources\_itertools.py first seen with mtime 1733252248.0
+DEBUG 2025-03-10 19:10:54,586 autoreload File C:\Users\Matei\AppData\Roaming\Python\Python313\site-packages\tzdata\zoneinfo\__init__.py first seen with mtime 1735919078.5409815
+DEBUG 2025-03-10 19:10:56,715 utils (0.014) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."username" = 'matei' LIMIT 21; args=('matei',); alias=default
+DEBUG 2025-03-10 19:10:57,291 utils (0.015) SELECT 1 AS "a" FROM "django_session" WHERE "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2' LIMIT 1; args=(Int4(1), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:10:57,292 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2025-03-10 19:10:57,300 utils (0.008) INSERT INTO "django_session" ("session_key", "session_data", "expire_date") VALUES ('1afqwpjoq7tfxq5ucwrk725dcwgzxjx2', 'e30:1trgeX:2OzUBgBwwbXOOjg1F-nOrE43lpLmFWu-1pP_hGzrMf4', '2025-03-24 17:10:57.292135+00:00'::timestamptz); args=('1afqwpjoq7tfxq5ucwrk725dcwgzxjx2', 'e30:1trgeX:2OzUBgBwwbXOOjg1F-nOrE43lpLmFWu-1pP_hGzrMf4', datetime.datetime(2025, 3, 24, 17, 10, 57, 292135, tzinfo=datetime.timezone.utc)); alias=default
+DEBUG 2025-03-10 19:10:57,301 utils (0.001) COMMIT; args=None; alias=default
+DEBUG 2025-03-10 19:10:57,310 utils (0.007) UPDATE "aplicatie1_customuser" SET "last_login" = '2025-03-10 17:10:57.302240+00:00'::timestamptz WHERE "aplicatie1_customuser"."id" = 6; args=(datetime.datetime(2025, 3, 10, 17, 10, 57, 302240, tzinfo=datetime.timezone.utc), 6); alias=default
+DEBUG 2025-03-10 19:10:57,311 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2025-03-10 19:10:57,312 utils (0.001) UPDATE "django_session" SET "session_data" = '.eJxVjMsOwiAQRf-FtSE8CkxduvcbyHQYpGogKe3K-O_apAvd3nPOfYmI21ri1nmJcxJn4cXpd5uQHlx3kO5Yb01Sq-syT3JX5EG7vLbEz8vh_h0U7OVbA5PVBnxiCFrb5NGEjEaR0gYnn4mCNZAtM2LyAM4OY3ZDzhCcMjCK9wflUze1:1trgeX:0hcK25GDEJOSTefXDyPxIZ64QQHk7r4xI06THjvebZ0', "expire_date" = '2025-03-24 17:10:57.311104+00:00'::timestamptz WHERE "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'; args=('.eJxVjMsOwiAQRf-FtSE8CkxduvcbyHQYpGogKe3K-O_apAvd3nPOfYmI21ri1nmJcxJn4cXpd5uQHlx3kO5Yb01Sq-syT3JX5EG7vLbEz8vh_h0U7OVbA5PVBnxiCFrb5NGEjEaR0gYnn4mCNZAtM2LyAM4OY3ZDzhCcMjCK9wflUze1:1trgeX:0hcK25GDEJOSTefXDyPxIZ64QQHk7r4xI06THjvebZ0', datetime.datetime(2025, 3, 24, 17, 10, 57, 311104, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:10:57,313 utils (0.000) COMMIT; args=None; alias=default
+INFO 2025-03-10 19:10:57,313 basehttp "POST /admin/login/?next=/admin/ HTTP/1.1" 302 0
+DEBUG 2025-03-10 19:10:57,392 utils (0.008) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:10:57.318595+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 10, 57, 318595, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:10:57,398 utils (0.004) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2025-03-10 19:10:57,460 utils (0.012) SELECT "django_admin_log"."id", "django_admin_log"."action_time", "django_admin_log"."user_id", "django_admin_log"."content_type_id", "django_admin_log"."object_id", "django_admin_log"."object_repr", "django_admin_log"."action_flag", "django_admin_log"."change_message", "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_admin_log" INNER JOIN "aplicatie1_customuser" ON ("django_admin_log"."user_id" = "aplicatie1_customuser"."id") LEFT OUTER JOIN "django_content_type" ON ("django_admin_log"."content_type_id" = "django_content_type"."id") WHERE "django_admin_log"."user_id" = 6 ORDER BY "django_admin_log"."action_time" DESC LIMIT 10; args=(6,); alias=default
+INFO 2025-03-10 19:10:57,466 basehttp "GET /admin/ HTTP/1.1" 200 17158
+INFO 2025-03-10 19:10:57,512 basehttp "GET /static/admin/css/dashboard.css HTTP/1.1" 200 441
+INFO 2025-03-10 19:10:57,535 basehttp "GET /static/admin/img/icon-changelink.svg HTTP/1.1" 200 380
+INFO 2025-03-10 19:10:57,536 basehttp "GET /static/admin/img/icon-addlink.svg HTTP/1.1" 200 331
+DEBUG 2025-03-10 19:11:00,675 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:11:00.604390+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 11, 0, 604390, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:11:00,680 utils (0.003) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2025-03-10 19:11:00,697 utils (0.015) SELECT COUNT(*) AS "__count" FROM "auth_group"; args=(); alias=default
+DEBUG 2025-03-10 19:11:00,698 utils (0.001) SELECT COUNT(*) AS "__count" FROM "auth_group"; args=(); alias=default
+DEBUG 2025-03-10 19:11:00,703 utils (0.001) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" ORDER BY "auth_group"."name" ASC; args=(); alias=default
+INFO 2025-03-10 19:11:00,885 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14682
+INFO 2025-03-10 19:11:00,939 basehttp "GET /static/admin/css/changelists.css HTTP/1.1" 200 6878
+INFO 2025-03-10 19:11:00,946 basehttp "GET /static/admin/js/jquery.init.js HTTP/1.1" 200 347
+INFO 2025-03-10 19:11:00,966 basehttp "GET /static/admin/js/core.js HTTP/1.1" 200 6208
+INFO 2025-03-10 19:11:00,966 basehttp "GET /static/admin/js/admin/RelatedObjectLookups.js HTTP/1.1" 200 9097
+INFO 2025-03-10 19:11:00,984 basehttp "GET /static/admin/js/urlify.js HTTP/1.1" 200 7887
+INFO 2025-03-10 19:11:01,003 basehttp "GET /static/admin/js/prepopulate.js HTTP/1.1" 200 1531
+INFO 2025-03-10 19:11:01,005 basehttp "GET /static/admin/img/search.svg HTTP/1.1" 200 458
+INFO 2025-03-10 19:11:01,005 basehttp "GET /static/admin/js/actions.js HTTP/1.1" 200 8076
+INFO 2025-03-10 19:11:01,026 basehttp "GET /static/admin/js/vendor/jquery/jquery.js HTTP/1.1" 200 285314
+DEBUG 2025-03-10 19:11:01,035 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:11:00.917228+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 11, 0, 917228, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:11:01,039 utils (0.003) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+INFO 2025-03-10 19:11:01,097 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 19:11:01,143 basehttp "GET /static/admin/js/filters.js HTTP/1.1" 200 978
+INFO 2025-03-10 19:11:01,145 basehttp "GET /static/admin/js/vendor/xregexp/xregexp.js HTTP/1.1" 200 325171
+INFO 2025-03-10 19:11:01,190 basehttp "GET /static/admin/img/tooltag-add.svg HTTP/1.1" 200 331
+DEBUG 2025-03-10 19:11:03,307 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:11:03.236806+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 11, 3, 236806, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:11:03,312 utils (0.003) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2025-03-10 19:11:03,313 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2025-03-10 19:11:03,318 utils (0.004) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" WHERE "auth_group"."id" = 2 LIMIT 21; args=(2,); alias=default
+DEBUG 2025-03-10 19:11:03,334 utils (0.013) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_group_permissions"."group_id" = 2 ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(2,); alias=default
+DEBUG 2025-03-10 19:11:03,339 utils (0.001) SELECT "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "django_content_type" WHERE ("django_content_type"."app_label" = 'auth' AND "django_content_type"."model" = 'group') LIMIT 21; args=('auth', 'group'); alias=default
+DEBUG 2025-03-10 19:11:03,340 utils (0.000) COMMIT; args=None; alias=default
+DEBUG 2025-03-10 19:11:03,413 utils (0.003) DECLARE "_django_curs_7264_sync_1" NO SCROLL CURSOR WITH HOLD FOR SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(); alias=default
+INFO 2025-03-10 19:11:03,484 basehttp "GET /admin/auth/group/2/change/ HTTP/1.1" 200 21294
+INFO 2025-03-10 19:11:03,538 basehttp "GET /static/admin/css/forms.css HTTP/1.1" 200 8794
+INFO 2025-03-10 19:11:03,546 basehttp "GET /static/admin/js/prepopulate_init.js HTTP/1.1" 200 586
+INFO 2025-03-10 19:11:03,554 basehttp "GET /static/admin/js/SelectBox.js HTTP/1.1" 200 4530
+INFO 2025-03-10 19:11:03,554 basehttp "GET /static/admin/js/SelectFilter2.js HTTP/1.1" 200 15502
+INFO 2025-03-10 19:11:03,564 basehttp "GET /static/admin/css/widgets.css HTTP/1.1" 200 11564
+INFO 2025-03-10 19:11:03,589 basehttp "GET /static/admin/js/change_form.js HTTP/1.1" 200 606
+DEBUG 2025-03-10 19:11:03,604 utils (0.006) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:11:03.516988+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 11, 3, 516988, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:11:03,609 utils (0.003) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+INFO 2025-03-10 19:11:03,611 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-10 19:11:03,679 basehttp "GET /static/admin/img/icon-unknown-alt.svg HTTP/1.1" 200 655
+INFO 2025-03-10 19:11:03,679 basehttp "GET /static/admin/img/icon-unknown.svg HTTP/1.1" 200 655
+INFO 2025-03-10 19:11:03,680 basehttp "GET /static/admin/img/selector-icons.svg HTTP/1.1" 200 3291
+DEBUG 2025-03-10 19:12:10,651 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:12:10.582815+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 12, 10, 582815, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:12:10,657 utils (0.004) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2025-03-10 19:12:10,662 utils (0.003) SELECT COUNT(*) AS "__count" FROM "auth_group"; args=(); alias=default
+DEBUG 2025-03-10 19:12:10,663 utils (0.000) SELECT COUNT(*) AS "__count" FROM "auth_group"; args=(); alias=default
+DEBUG 2025-03-10 19:12:10,668 utils (0.001) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" ORDER BY "auth_group"."name" ASC; args=(); alias=default
+INFO 2025-03-10 19:12:10,678 basehttp "GET /admin/auth/group/ HTTP/1.1" 200 14682
+DEBUG 2025-03-10 19:12:12,211 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:12:12.143290+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 12, 12, 143290, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:12:12,216 utils (0.003) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+DEBUG 2025-03-10 19:12:12,217 utils (0.000) BEGIN; args=None; alias=default
+DEBUG 2025-03-10 19:12:12,221 utils (0.004) SELECT "auth_group"."id", "auth_group"."name" FROM "auth_group" WHERE "auth_group"."id" = 3 LIMIT 21; args=(3,); alias=default
+DEBUG 2025-03-10 19:12:12,232 utils (0.009) SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename" FROM "auth_permission" INNER JOIN "auth_group_permissions" ON ("auth_permission"."id" = "auth_group_permissions"."permission_id") INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") WHERE "auth_group_permissions"."group_id" = 3 ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(3,); alias=default
+DEBUG 2025-03-10 19:12:12,236 utils (0.000) COMMIT; args=None; alias=default
+DEBUG 2025-03-10 19:12:12,246 utils (0.002) DECLARE "_django_curs_7264_sync_2" NO SCROLL CURSOR WITH HOLD FOR SELECT "auth_permission"."id", "auth_permission"."name", "auth_permission"."content_type_id", "auth_permission"."codename", "django_content_type"."id", "django_content_type"."app_label", "django_content_type"."model" FROM "auth_permission" INNER JOIN "django_content_type" ON ("auth_permission"."content_type_id" = "django_content_type"."id") ORDER BY "django_content_type"."app_label" ASC, "django_content_type"."model" ASC, "auth_permission"."codename" ASC; args=(); alias=default
+INFO 2025-03-10 19:12:12,261 basehttp "GET /admin/auth/group/3/change/ HTTP/1.1" 200 21269
+DEBUG 2025-03-10 19:12:12,368 utils (0.005) SELECT "django_session"."session_key", "django_session"."session_data", "django_session"."expire_date" FROM "django_session" WHERE ("django_session"."expire_date" > '2025-03-10 17:12:12.292989+00:00'::timestamptz AND "django_session"."session_key" = '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2') LIMIT 21; args=(datetime.datetime(2025, 3, 10, 17, 12, 12, 292989, tzinfo=datetime.timezone.utc), '1afqwpjoq7tfxq5ucwrk725dcwgzxjx2'); alias=default
+DEBUG 2025-03-10 19:12:12,373 utils (0.004) SELECT "aplicatie1_customuser"."id", "aplicatie1_customuser"."password", "aplicatie1_customuser"."last_login", "aplicatie1_customuser"."is_superuser", "aplicatie1_customuser"."username", "aplicatie1_customuser"."first_name", "aplicatie1_customuser"."last_name", "aplicatie1_customuser"."email", "aplicatie1_customuser"."is_staff", "aplicatie1_customuser"."is_active", "aplicatie1_customuser"."date_joined", "aplicatie1_customuser"."nume", "aplicatie1_customuser"."prenume", "aplicatie1_customuser"."telefon", "aplicatie1_customuser"."adresa", "aplicatie1_customuser"."data_nasterii", "aplicatie1_customuser"."gen", "aplicatie1_customuser"."ocupatie", "aplicatie1_customuser"."cod", "aplicatie1_customuser"."email_confirmat", "aplicatie1_customuser"."blocat" FROM "aplicatie1_customuser" WHERE "aplicatie1_customuser"."id" = 6 LIMIT 21; args=(6,); alias=default
+INFO 2025-03-10 19:12:12,376 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342

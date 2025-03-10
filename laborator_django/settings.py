@@ -146,8 +146,7 @@ EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
 DEFAULT_FROM_EMAIL = os.getenv('DEFAULT_FROM_EMAIL')
 
 ADMINS = [
-    ('Admin1', 'msungureanu@gmail.com'),
-    ('Admin2', 'viceroyow@gmail.com')
+    ('Admin1', os.getenv('EMAIL_ADMIN'))
     ]
 
 LOGGING = {
