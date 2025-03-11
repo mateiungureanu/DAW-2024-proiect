@@ -1,4 +1,4 @@
-# Cinema web application - Python, Django
+# Cinema web app - Python, Django, HTML, CS, JS
 ## Dezvoltarea Aplicatiilor Web - Django (2024-2025)
 
 ## Table of contents
