@@ -83,7 +83,7 @@ GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA django TO matei;
 + `python manage.py createsuperuser` -> \[your-name\] -> \[your-email\] -> \[your-password\]  
 These are not the same as those in _.env_; these are for a profile at http://127.0.0.1:8000/admin \(page accessible only while the server is running\).
 #### Populating the database
-+ Add PATH Variable _your\postgresql\download\location\PostgreSQL\\[your-postgresql-version\]\bin_.  
++ Add PATH Variable: _your\postgresql\download\location\PostgreSQL\\[your-postgresql-version\]\bin_  
 Example: _C:\Program Files\PostgreSQL\17\bin_
 + Run the following commands:
 ```
