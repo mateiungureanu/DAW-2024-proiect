@@ -94,6 +94,11 @@ psql -h localhost -U matei -d proiect -f "data\filme.sql"
 psql -h localhost -U matei -d proiect -f "data\difuzari.sql"  
 psql -h localhost -U matei -d proiect -f "data\achizitii.sql"  
 psql -h localhost -U matei -d proiect -f "data\bilete.sql"
+psql -h localhost -U matei -d proiect -f "data\categorii.sql"
+psql -h localhost -U matei -d proiect -f "data\produse.sql"
+psql -h localhost -U matei -d proiect -f "data\promotii.sql"
+psql -h localhost -U matei -d proiect -f "data\customuser.sql"
+psql -h localhost -U matei -d proiect -f "data\vizualizari.sql"
 ```
 + `python manage.py runserver`
 + Go to http://127.0.0.1:8000/admin and login using the superuser credentials, then create a group called "Administratori_angajati" with the following permissions: _Can add angajati_, _Can change angajati_, _Can delete angajati_, _Can view angajati_, and a group called "Moderatori" with the following permissions: _Can add log entry_, _Can change log entry_, _Can delele log entry_, _Can view log entry_, _Blocheaza utilizatori_, _Editeaza campurile nume, prenume, email_, _Can view user_.
