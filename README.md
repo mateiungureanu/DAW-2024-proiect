@@ -30,7 +30,6 @@
 After installation check version: `python -m django --version`
 
 + Download PostgreSQL from this [link](https://www.postgresql.org/download/). Make sure you check pgAdmin4.
-+ Open pgAdmin4 and connect using the password chosen during installation.
 
 ### Setup
 #### Downloading files
@@ -68,7 +67,7 @@ EMAIL_HOST_USER and EMAIL_ADMIN do **not** have to be the same address.
 > Do not share your _secrets_! Check if _.env_ is ignored by _.gitignore_ \(`git status -- .env`\) before pushing to Git.
 
 #### Creating the database
-+ `pip install psycopg2`
++ Open pgAdmin4 and connect using the password chosen during installation.
 + In the left panel, Servers \> PostgreSQL \[your-postgresql-version\] \> Databases, right click on Databases and select Create \> Database..., name it "proiect", then click Save.
 + Under _proiect_ database, right click on Schemas and select Create \> Schema..., name it "django", then click Save.
 + Click on _proiect_ database, then press Alt+Shift+Q to open Query Tool. Paste the following lines then press F5 or click execute script. 
@@ -81,6 +80,7 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA django TO matei;
 GRANT ALL PRIVILEGES ON ALL SEQUENCES IN SCHEMA django TO matei;  
 GRANT ALL PRIVILEGES ON ALL FUNCTIONS IN SCHEMA django TO matei;  
 ```
++ `pip install psycopg2`
 + `python manage.py makemigrations aplicatie1`
 + `python manage.py migrate`
 + `python manage.py createsuperuser` -> \[your-name\] -> \[your-email\] -> \[your-password\]  
