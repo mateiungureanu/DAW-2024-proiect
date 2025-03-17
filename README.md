@@ -15,7 +15,8 @@
 
 ### Description
 
-Full-stack web application with user authentication, email verification, security checks and warnings, role-based access control, shopping cart, invoice generation and admin dashboard to manage users, groups, offers, and permissions. Data is stored in PostgreSQL, and the app runs on localhost.
++ Full-stack web application with user authentication, email verification, security checks and warnings, role-based access control, shopping cart, invoice generation and admin dashboard to manage users, groups, offers, and permissions. Data is stored in PostgreSQL.
++ It offers users the option to register, to login, to view all movies and filter them, to view all cinemas, to contact support, to view all products and buy them.
 
 ### Requirements
 
@@ -27,6 +28,9 @@ Full-stack web application with user authentication, email verification, securit
     <ins>specific version</ins>: `python -m pip install Django==[version]`  
 
 After installation check version: `python -m django --version`
+
++ Download PostgreSQL from this [link](https://www.postgresql.org/download/). Make sure you check pgAdmin4.
++ Open pgAdmin4 and connect using the password chosen during installation.
 
 ### Setup
 #### Downloading files
@@ -65,8 +69,6 @@ EMAIL_HOST_USER and EMAIL_ADMIN do **not** have to be the same address.
 
 #### Creating the database
 + `pip install psycopg2`
-+ Download PostgreSQL from this [link](https://www.postgresql.org/download/). Make sure you check pgAdmin4.
-+ Open pgAdmin4 and connect using the password chosen during installation.
 + In the left panel, Servers \> PostgreSQL \[your-postgresql-version\] \> Databases, right click on Databases and select Create \> Database..., name it "proiect", then click Save.
 + Under _proiect_ database, right click on Schemas and select Create \> Schema..., name it "django", then click Save.
 + Click on _proiect_ database, then press Alt+Shift+Q to open Query Tool. Paste the following lines then press F5 or click execute script. 
