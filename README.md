@@ -1,5 +1,5 @@
 # Cinema web app - Python, Django, HTML, CS, JS
-## Dezvoltarea Aplicatiilor Web - Django (2024-2025)
+## Dezvoltarea Aplicatiilor Web in Django (2024-2025)
 
 ## Table of contents
 + [Description](#description)
@@ -9,6 +9,7 @@
   + [Creating _.env_](#creating-env)
   + [Creating the database](#creating-the-database)
   + [Populating the database](#populating-the-database)
++ [Pictures](#pictures)
 + [Diagrams](#diagrams)
 
 
@@ -103,6 +104,13 @@ psql -h localhost -U matei -d proiect -f "data\vizualizari.sql"
 + `python manage.py runserver`
 + Go to http://127.0.0.1:8000/admin and login using the superuser credentials, then create a group called "Administratori_angajati" with the following permissions: _Can add angajati_, _Can change angajati_, _Can delete angajati_, _Can view angajati_, and a group called "Moderatori" with the following permissions: _Can add log entry_, _Can change log entry_, _Can delele log entry_, _Can view log entry_, _Blocheaza utilizatori_, _Editeaza campurile nume, prenume, email_, _Can view user_.
 + Go to http://localhost:8000/aplicatie1/user_login to log in and access the full features of the site.
+
+### Pictures
+
+![Login](pictures/poza_site_1.png)
+![Shopping cart](pictures/poza_site_2.png)
+![Contact Form](pictures/poza_site_3.png)
+![Register Form](pictures/poza_site_4.png)
 
 ### Diagrams
 

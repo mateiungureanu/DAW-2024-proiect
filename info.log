@@ -113,3 +113,30 @@ INFO 2025-03-13 13:19:01,671 basehttp "GET /admin/aplicatie1/vizualizari/ HTTP/1
 INFO 2025-03-13 13:19:01,785 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
 INFO 2025-03-13 13:19:11,692 basehttp "GET /admin/aplicatie1/customuser/ HTTP/1.1" 200 21695
 INFO 2025-03-13 13:19:11,914 basehttp "GET /admin/jsi18n/ HTTP/1.1" 200 3342
+INFO 2025-03-17 10:23:20,993 autoreload Watching for file changes with StatReloader
+INFO 2025-03-17 10:23:29,867 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+WARNING 2025-03-17 10:23:30,082 log Not Found: /favicon.ico
+WARNING 2025-03-17 10:23:30,083 basehttp "GET /favicon.ico HTTP/1.1" 404 2372
+INFO 2025-03-17 10:23:35,371 basehttp "GET /aplicatie1/lista_filme/ HTTP/1.1" 200 1820
+INFO 2025-03-17 10:23:38,697 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-03-17 10:23:38,707 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+INFO 2025-03-17 10:24:09,020 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+INFO 2025-03-17 10:24:28,410 basehttp "GET /aplicatie1/filtrare_filme_2/ HTTP/1.1" 200 2978
+INFO 2025-03-17 10:24:32,417 basehttp "GET /aplicatie1/lista_filme/ HTTP/1.1" 200 1820
+INFO 2025-03-17 10:24:33,126 basehttp "GET /aplicatie1/lista_cinemauri/ HTTP/1.1" 200 1898
+INFO 2025-03-17 10:24:35,767 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7684
+INFO 2025-03-17 10:24:38,656 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 20677
+INFO 2025-03-17 10:24:40,769 basehttp "GET /aplicatie1/profile/ HTTP/1.1" 302 0
+INFO 2025-03-17 10:24:40,786 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+INFO 2025-03-17 10:25:09,785 basehttp "GET /aplicatie1/user_login/?next=/aplicatie1/profile/ HTTP/1.1" 200 1942
+INFO 2025-03-17 10:25:47,592 basehttp "GET /aplicatie1/cos_virtual/ HTTP/1.1" 200 7684
+INFO 2025-03-17 10:26:20,847 basehttp "GET /aplicatie1/lista_produse/ HTTP/1.1" 200 20677
+INFO 2025-03-17 10:26:37,434 basehttp "GET /aplicatie1/lista_cinemauri/ HTTP/1.1" 200 1898
+INFO 2025-03-17 10:26:42,728 basehttp "GET /aplicatie1/contact HTTP/1.1" 200 2955
+INFO 2025-03-17 10:26:48,689 basehttp "GET /aplicatie1/user_login/ HTTP/1.1" 200 1942
+INFO 2025-03-17 10:26:50,300 basehttp "GET /aplicatie1/register/ HTTP/1.1" 200 3783
+INFO 2025-03-17 10:26:53,508 basehttp "GET /aplicatie1/contact HTTP/1.1" 200 2955
+INFO 2025-03-17 10:26:56,535 basehttp "GET /aplicatie1/filtrare_filme_2/ HTTP/1.1" 200 2978
+INFO 2025-03-17 10:26:59,437 basehttp "GET /aplicatie1/lista_cinemauri/ HTTP/1.1" 200 1898
+INFO 2025-03-17 10:27:00,285 basehttp "GET /aplicatie1/contact HTTP/1.1" 200 2955
+INFO 2025-03-17 10:27:24,199 basehttp "GET /aplicatie1/register/ HTTP/1.1" 200 3783
