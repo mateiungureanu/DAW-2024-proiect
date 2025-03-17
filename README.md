@@ -27,8 +27,6 @@
     <ins>latest</ins>: `pip install django` or `python -m pip install Django`  
     <ins>specific version</ins>: `python -m pip install Django==[version]`  
 
-After installation check version: `python -m django --version`
-
 + Download PostgreSQL from this [link](https://www.postgresql.org/download/). Make sure you check pgAdmin4.
 
 ### Setup
